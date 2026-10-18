@@ -2,21 +2,25 @@
 
 ## Study status
 
-- Status: Not yet evaluated
-- Researcher: <!-- Add name -->
-- Research date(s): <!-- Add dates -->
-- Audit version: <!-- Add version -->
+- Status: Initial DICK'S walkthrough completed; Academy and REI not yet evaluated; comparative conclusions pending
+- Researcher: Andre Taylor
+- Research date(s): October 17, 2026, approximately 9:46–10:16 PM Central
+- Audit version: Not recorded
 
 ## 1. Research objective
 
-Compare how DICK'S Sporting Goods, Academy Sports + Outdoors, and REI support product discovery and local pickup for the standardized shopping scenario below. Examine how clearly each experience helps a shopper find eligible products, assess availability, and understand pickup options.
+Compare how DICK'S Sporting Goods, Academy Sports + Outdoors, and REI support finding eligible running shoes and understanding local pickup options under the standardized scenario.
+
+### Scope and exclusions
+
+Evaluate online product discovery, filtering, inventory visibility, and eligibility for Buy Online, Pick Up In Store (BOPIS). Physical store operations, employee fulfillment workflows, actual order preparation times, and inventory-record accuracy are excluded. No purchase was made. This researcher walkthrough does not establish validated customer frustrations or business impact.
 
 ### Research questions
 
-- How easily can a shopper find shoes that meet the category, size, and price requirements?
-- How clearly are local store availability and pickup eligibility communicated?
-- What information supports product comparison and a confident selection?
-- Where does the journey introduce friction, uncertainty, or barriers?
+- How can a shopper find products meeting category, size, and price requirements?
+- How clearly are local availability and pickup eligibility communicated?
+- What information supports product comparison and selection?
+- What observed behaviors warrant further customer research?
 
 ## 2. Standardized scenario
 
@@ -29,11 +33,10 @@ Compare how DICK'S Sporting Goods, Academy Sports + Outdoors, and REI support pr
 | Location | Dallas, TX |
 | ZIP code | 75231 |
 
-Apply these requirements consistently across retailers. Record whether the price cap includes taxes or fees before evaluating; do not assume pickup availability or a qualifying product exists.
-
-- Price-cap interpretation: Not yet evaluated
-- Definition of “local” / store-selection rule: Not yet evaluated
-- Other scenario assumptions: Not yet evaluated
+- Price-cap interpretation: Displayed product price at or below $150; treatment of taxes and fees not recorded.
+- Selected store: DICK'S Dallas (Best Buy Plaza); distance and store-selection rationale not recorded.
+- Predetermined product-selection rule: Open the first filtered product with a visibly qualifying price and pickup indication.
+- Price-filter adaptation: Selected $50–$100 and $100–$150 bands. These bands omit prices below $50, so the observed results do not necessarily represent all products within the maximum budget.
 
 ## 3. Methodology
 
@@ -41,73 +44,81 @@ Apply these requirements consistently across retailers. Record whether the price
 
 | Control | Recorded setup |
 | --- | --- |
-| Device and operating system | Not yet evaluated |
-| Browser and version | Not yet evaluated |
-| Viewport / screen size | Not yet evaluated |
-| Signed-in or guest state | Not yet evaluated |
-| Cookies / prior browsing state | Not yet evaluated |
-| Location permission setting | Not yet evaluated |
-| Session date, time, and time zone | Not yet evaluated |
-| Retailer evaluation order | Not yet evaluated |
-| Starting URL for each retailer | Not yet evaluated |
-| Search phrase / navigation approach | Not yet evaluated |
+| Device and operating system | Windows desktop; OS version not recorded |
+| Browser and version | Chrome Incognito; version not recorded |
+| Viewport / screen size | Not recorded |
+| Signed-in or guest state | Not recorded |
+| Cookies / prior browsing state | Incognito used; other details not recorded |
+| Location permission setting | Not recorded |
+| Session date, time, and time zone | October 17, 2026, approximately 9:46–10:16 PM Central; session window, not measured task duration |
+| Retailer evaluation order | DICK'S first; Academy and REI pending |
+| Starting URL for each retailer | DICK'S homepage; exact URL not recorded. Academy and REI not yet evaluated |
+| Search phrase / navigation approach | Site menus to Men's Running Shoes; did not use Google. Exact menu sequence not recorded |
 
 ### Evaluation procedure
 
-1. Record session conditions and begin at the retailer's homepage.
-2. Set ZIP code 75231 and record the selected store and its distance, if shown.
-3. Find men's running shoes using the documented search or navigation approach.
-4. Apply US size 10 and the $150 price cap; record how each constraint is represented.
-5. Explore pickup filtering and local availability using the same store-selection rule.
-6. Inspect a qualifying product, if available, and check size-specific pickup information.
-7. Review product comparison support and pickup details. Define and record the stopping point before proceeding; no purchase is required.
-8. Capture evidence with timestamps, page URLs, and screenshot IDs. Record unavailable controls, interruptions, or deviations without inventing results.
+1. Begin at the retailer homepage and record session conditions.
+2. Set the shopping market to ZIP 75231 and record the selected store.
+3. Navigate to Men's Running Shoes using site menus.
+4. Apply size 10 and available price controls for the $150 maximum; document coverage limitations.
+5. Select local Pickup and record filter persistence and displayed counts.
+6. Open the first result with visibly qualifying price and pickup indication.
+7. Select required product variants and inspect pickup eligibility, selected store, and displayed inventory messages.
+8. Stop without purchasing; record evidence and distinguish displayed claims from verified performance.
 
 ### Task recording
 
-- Task start / end definition: Not yet evaluated
-- Completion / partial completion / failure definition: Not yet evaluated
-- Timing and interaction-count method, if used: Not yet evaluated
-- Protocol deviations: Not yet evaluated
+- Observed start / end: Homepage navigation through product-page pickup selection and store confirmation; no purchase made.
+- Formal completion rubric and timing boundaries: Not recorded.
+- Timing / interaction-count method: Not recorded; no measured task duration or click count available.
+- Protocol adaptation: Used two price bands because the observed interface offered no custom maximum-price input.
+- Other deviations / interruptions: Not recorded.
 
 ## 4. Evaluation criteria
 
-Use qualitative evidence for the initial audit. No scores or rankings have been assigned. If scoring is introduced later, define the scale and anchors before applying it consistently.
+Use qualitative evidence. No usability scores or rankings assigned; agree on a scoring rubric before any scoring.
 
 | Criterion | What to examine | Evidence to record |
 | --- | --- | --- |
-| Search and navigation | Category labels, search relevance, and path to men's running shoes | Steps, query, URLs, screenshot IDs |
-| Size filtering | Visibility, meaning, and persistence of US size 10 | Filter behavior and selected state |
-| Price filtering | Ability to enforce the $150 cap and interpret displayed prices | Controls, price context, exclusions |
-| Location and store selection | ZIP entry, store selection, distance, and location persistence | Selected store and location state |
-| Pickup discoverability | Visibility of pickup controls and eligibility in results | Labels, controls, product examples |
-| Inventory clarity | Relationship between size, store, and stock status | Exact availability message and context |
-| Product information | Details useful for assessing running shoes | Information present, missing, or unclear |
-| Comparison support | Ability to compare eligible products and retain context | Features, steps, and context persistence |
-| Pickup expectations | Timing, fees, instructions, and limitations presented | Exact claims, page location, evidence |
-| Usability and accessibility | Labels, keyboard interaction, focus, readability, and errors within tested scope | Test performed and observed behavior |
+| Search and navigation | Category labels, relevance, and path | Steps, URLs, screenshot IDs |
+| Size filtering | Visibility and persistence of size 10 | Controls and selected state |
+| Price filtering | Enforcing the $150 cap and understanding prices | Controls, coverage, price context |
+| Location and store selection | ZIP, selected store, distance, persistence | Store and location state |
+| Pickup discoverability | Pickup controls and eligibility in results | Labels and product indications |
+| Inventory clarity | Size- and store-specific stock messaging | Exact messages and context |
+| Product information | Information supporting running-shoe assessment | Details present or unclear |
+| Comparison support | Comparing eligible products and retaining context | Features and observed behavior |
+| Pickup expectations | Displayed timing, fees, instructions, limitations | Claims and page context |
+| Usability and accessibility | Labels, keyboard behavior, focus, readability, errors | Tests performed and observed behavior |
 
 ## 5. Retailer observations
 
-Record direct observations separately from interpretations. Duplicate the observation row as needed and link each substantive claim to evidence.
+Direct observations below come from Andre Taylor's supplied walkthrough. Interpretations are separated in the final column. The researcher reviewed all seven screenshots and confirmed their contents and observation mappings. Page URLs were not recorded. Approximate local file timestamps are listed in Section 6; interaction times were not independently verified.
 
 ### 5.1 DICK'S Sporting Goods
 
 | Session field | Record |
 | --- | --- |
-| Date / time / time zone | Not yet evaluated |
-| Starting and relevant page URLs | Not yet evaluated |
-| Selected store / displayed distance | Not yet evaluated |
-| Search / navigation path and applied filters | Not yet evaluated |
-| Product / variant inspected | Not yet evaluated |
-| Displayed price and size-specific pickup availability | Not yet evaluated |
-| Task outcome and stopping point | Not yet evaluated |
-| Timing / interaction count, if measured | Not yet evaluated |
-| Deviations / interruptions | Not yet evaluated |
+| Date / time / time zone | October 17, 2026, approximately 9:46–10:16 PM Central |
+| Starting and relevant page URLs | Homepage → Men's Running Shoes → product page; exact URLs not recorded |
+| Selected store / displayed distance | DICK'S Dallas (Best Buy Plaza); distance not recorded |
+| Search / navigation path and applied filters | Site menus; men's size 10; $50–$100 and $100–$150; Pickup |
+| Product / variant inspected | Brooks Men's Adrenaline GTS 25; black colorway; size 10; Medium/D width |
+| Displayed price and size-specific pickup availability | $124.98; Free Store Pickup; “Ready tomorrow”; after pickup selection, selected store and “Only 1 left!” displayed |
+| Task outcome and stopping point | Product-level pickup eligibility and store messaging observed; no purchase |
+| Timing / interaction count, if measured | Not recorded |
+| Deviations / interruptions | Price-band adaptation above; other details not recorded |
 
 | Observation ID | Criterion | Direct observation | Evidence ID / URL | Interpretation / open question |
 | --- | --- | --- | --- | --- |
-| <!-- Add ID --> | <!-- Add criterion --> | Not yet evaluated | <!-- Add reference --> | Not yet evaluated |
+| D-01 | Navigation and location | Men's Running Shoes category showed the selected store in the header, Road Running and Trail Running links, and Shipping, Pickup, and Same Day Delivery above results. | Supplied journey step 1; S-01 | No customer usability conclusion drawn. |
+| D-02 | Results and filters | Unfiltered category displayed 378 products. Filters included brand, men's shoe size, width, surface type, running type, cushioning, shoe weight, color, sale, and price. | Journey step 2; S-02 / S-03 | Counts are a session snapshot. |
+| D-03 | Size and price filtering | Selected men's size 10. No custom maximum-price input was offered in the observed interface; selected both $50–$100 and $100–$150 ranges. | Journey step 3; S-04 | Products below $50 may have been excluded by this protocol adaptation. |
+| D-04 | Results and price visibility | Size and price filters reduced results to 111; Pickup displayed 17. At least one listing card showed “See Price in Cart,” preventing direct price verification from that card. | Journey step 4; S-04 | Effect on customer decisions remains untested. |
+| D-05 | Pickup filtering | Selected Pickup for Dallas (Best Buy Plaza). Prior filters were preserved and results fell to 17 products. | Journey step 5; S-05 | No customer frustration or benefit validated. |
+| D-06 | Product selection | Following the predetermined selection rule, opened Brooks Men's Adrenaline GTS 25 at $124.98. | Journey step 6; S-05 / S-06 | Protocol-driven choice, not a product recommendation. |
+| D-07 | Variant persistence | Black colorway carried over. The researcher selected size 10 again and selected width Medium/D on the product page before seeing the fulfillment information. | Journey step 7; S-06 | Repeated selection observed; customer impact remains unvalidated. |
+| D-08 | Pickup and inventory messaging | After the researcher selected size 10 and width Medium/D on the product page, fulfillment information displayed Free Store Pickup and “Ready tomorrow.” The researcher then explicitly selected Free Store Pickup before DICK'S Dallas (Best Buy Plaza) and “Only 1 left!” appeared. | Journey step 8; S-06 / S-07 | Displayed claims only; actual readiness and stock accuracy were not tested. |
 
 ### 5.2 Academy Sports + Outdoors
 
@@ -147,53 +158,67 @@ Record direct observations separately from interpretations. Duplicate the observ
 
 ## 6. Screenshot references
 
-Store captured screenshots in `research/screenshots/`. Suggested naming convention: `<retailer>-<step>-<YYYY-MM-DD>-<sequence>.png`. Add relative links only after files exist. Avoid including personal or account information.
+All seven supplied files exist in `research/screenshots/`. Links are relative to this audit. Filenames are retained as supplied. The researcher reviewed all seven screenshots and confirmed the contents and observation mappings below. S-02 and S-03 show two scroll positions of the unfiltered results. Times below are researcher-supplied approximate local screenshot file timestamps, all October 17, 2026, Central; they are not independently verified interaction times or measured task durations. Exact source URLs remain not recorded.
 
-| Screenshot ID | Retailer | Step / criterion | Relative file path | Source URL | Captured date / time / zone | Context / annotation |
+| Screenshot ID | Retailer | Step / criterion | Relative file path | Source URL | Approximate local file timestamp (Central) | Context / annotation |
 | --- | --- | --- | --- | --- | --- | --- |
-| <!-- Add ID --> | <!-- Add retailer --> | <!-- Add step --> | <!-- Add path after capture --> | <!-- Add URL --> | <!-- Add timestamp --> | Not yet evaluated |
+| S-01 | DICK'S | Category overview | [dicks-01-category-overview.png](screenshots/dicks-01-category-overview.png) | Not recorded | October 17, 2026, approximately 9:46 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
+| S-02 | DICK'S | Unfiltered results — first scroll position | [dicks-02-initial-results.png](screenshots/dicks-02-initial-results.png) | Not recorded | October 17, 2026, approximately 9:49 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
+| S-03 | DICK'S | Unfiltered results — second scroll position | [dicks-03-initial-results.png](screenshots/dicks-03-initial-results.png) | Not recorded | October 17, 2026, approximately 9:50 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
+| S-04 | DICK'S | Size / price filtering | [dicks-04-size-price-filtered.png](screenshots/dicks-04-size-price-filtered.png) | Not recorded | October 17, 2026, approximately 10:03 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
+| S-05 | DICK'S | Pickup-filtered results | [dicks-05-pickup-filtered.png](screenshots/dicks-05-pickup-filtered.png) | Not recorded | October 17, 2026, approximately 10:06 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
+| S-06 | DICK'S | Product-page pickup information | [dicks-06-product-pickup.png](screenshots/dicks-06-product-pickup.png) | Not recorded | October 17, 2026, approximately 10:13 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
+| S-07 | DICK'S | Selected-store confirmation | [dicks-07-store-confirmation.png](screenshots/dicks-07-store-confirmation.png) | Not recorded | October 17, 2026, approximately 10:16 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
 
 ## 7. Limitations
 
-Document actual constraints and their effects on interpretation. Consider inventory and pricing changes, location specificity, session personalization, device coverage, accessibility test scope, and the difference between an expert audit and participant research.
-
 | Limitation | Observed impact | Mitigation / follow-up |
 | --- | --- | --- |
-| Not yet evaluated | Not yet evaluated | Not yet evaluated |
+| After-hours research | Session occurred after normal shopping hours, which may influence “Ready tomorrow”; actual preparation time not evaluated. | Verify store-hours context before interpreting the estimate. |
+| Single researcher walkthrough | No participant feedback or validated customer frustrations. | Validate interpretations with customers. |
+| Single store, product, and session | Displayed prices, counts, and inventory are contextual snapshots; inventory accuracy not tested. | Repeat before generalizing. |
+| Incomplete metadata | Versions, viewport, account state, permissions, URLs, and distance not recorded. Approximate file timestamps are available; interaction times were not independently verified. | Confirm available details without guessing. |
+| Price-band coverage | Selected ranges omit products below $50 despite a maximum-only budget. | Assess omitted qualifying products and price-control behavior. |
+| Scope exclusions | No purchase, physical operations, employee workflow, actual fulfillment performance, or inventory-record accuracy evaluation. | Keep claims within online discovery and displayed BOPIS eligibility. |
+| Untested criteria | Accessibility and comparison support not systematically evaluated. | Evaluate separately before drawing conclusions. |
+| Competitors pending | Academy and REI unevaluated. | Complete comparable walkthroughs before synthesis. |
 
 ## 8. Cross-retailer comparison
 
-Complete only after collecting evidence. A missing or untested feature must be distinguished from a confirmed absence. Do not infer a winner from incomplete observations.
+Comparative conclusions remain pending. DICK'S observations are documented in Section 5.1; the matrix awaits comparable evidence. Distinguish untested features from confirmed absence. No winner or ranking assigned.
 
 | Criterion | DICK'S Sporting Goods | Academy Sports + Outdoors | REI | Supporting evidence IDs |
 | --- | --- | --- | --- | --- |
-| Search and navigation | Not yet evaluated | Not yet evaluated | Not yet evaluated | |
-| Size filtering | Not yet evaluated | Not yet evaluated | Not yet evaluated | |
-| Price filtering | Not yet evaluated | Not yet evaluated | Not yet evaluated | |
-| Location and store selection | Not yet evaluated | Not yet evaluated | Not yet evaluated | |
-| Pickup discoverability | Not yet evaluated | Not yet evaluated | Not yet evaluated | |
-| Inventory clarity | Not yet evaluated | Not yet evaluated | Not yet evaluated | |
-| Product information | Not yet evaluated | Not yet evaluated | Not yet evaluated | |
+| Search and navigation | D-01; synthesis pending | Not yet evaluated | Not yet evaluated | D-01 |
+| Size filtering | D-03 / D-07; synthesis pending | Not yet evaluated | Not yet evaluated | D-03, D-07 |
+| Price filtering | D-03 / D-04; synthesis pending | Not yet evaluated | Not yet evaluated | D-03, D-04 |
+| Location and store selection | D-01 / D-08; synthesis pending | Not yet evaluated | Not yet evaluated | D-01, D-08 |
+| Pickup discoverability | D-01 / D-05; synthesis pending | Not yet evaluated | Not yet evaluated | D-01, D-05 |
+| Inventory clarity | D-08; synthesis pending | Not yet evaluated | Not yet evaluated | D-08 |
+| Product information | Limited variant observations; synthesis pending | Not yet evaluated | Not yet evaluated | D-06, D-07 |
 | Comparison support | Not yet evaluated | Not yet evaluated | Not yet evaluated | |
-| Pickup expectations | Not yet evaluated | Not yet evaluated | Not yet evaluated | |
-| Usability and accessibility | Not yet evaluated | Not yet evaluated | Not yet evaluated | |
-| Overall task outcome | Not yet evaluated | Not yet evaluated | Not yet evaluated | |
+| Pickup expectations | D-08; synthesis pending | Not yet evaluated | Not yet evaluated | D-08 |
+| Usability and accessibility | Not systematically evaluated | Not yet evaluated | Not yet evaluated | |
+| Overall task outcome | Pickup messaging observed; no purchase; synthesis pending | Not yet evaluated | Not yet evaluated | D-08 |
 
-- Evidence-supported patterns: Not yet evaluated
-- Meaningful differences: Not yet evaluated
-- Unresolved questions: Not yet evaluated
+- Evidence-supported comparative patterns: Pending.
+- Meaningful cross-retailer differences: Pending.
+- Unresolved questions: Competitor behavior and customer response remain unevaluated.
 
 ## 9. Hypotheses
 
-Add hypotheses after reviewing observations. Treat each as an unvalidated explanation or proposed improvement, with a measurable test and evidence that could disconfirm it.
+These are proposed, unvalidated interpretations, not findings about customer frustrations. Define methods, metrics, and decision thresholds before testing.
 
 | Hypothesis ID | Hypothesis | Supporting observation IDs | Proposed validation | Success / disconfirmation criteria | Status |
 | --- | --- | --- | --- | --- | --- |
-| <!-- Add ID --> | <!-- Add hypothesis --> | <!-- Add references --> | <!-- Add method --> | <!-- Define criteria --> | Not yet evaluated |
+| H-01 | Preserving selected size on the product page may reduce repeated selection effort. | D-07 | Compare current and size-preserving journeys with participants. | Define measures and thresholds before testing; improvement not assumed. | Unvalidated |
+| H-02 | Directly visible listing prices may help shoppers assess budget eligibility. | D-04 | Test listing-price alternatives with participants. | Define budget-assessment measures and disconfirmation criteria before testing. | Unvalidated |
 
 ## 10. Next steps
 
 | Action | Rationale / evidence | Owner | Target date | Status |
 | --- | --- | --- | --- | --- |
-| <!-- Add action --> | <!-- Add rationale --> | <!-- Add owner --> | <!-- Add date --> | Not yet evaluated |
-
+| Add source URLs and any additional capture metadata if available | Screenshot contents and mappings confirmed by researcher; URLs remain not recorded and file timestamps do not independently verify interaction times | Not assigned | Not set | Pending |
+| Confirm price-cap tax/fee treatment, price-band coverage, missing setup details, and store distance | Avoid assumptions and assess products below $50 | Not assigned | Not set | Pending |
+| Complete Academy and REI walkthroughs using the same scenario and selection rule | Comparative conclusions pending | Not assigned | Not set | Pending |
+| Define participant validation and agree on any future scoring rubric | Hypotheses unvalidated; no usability scores assigned | Not assigned | Not set | Pending |
