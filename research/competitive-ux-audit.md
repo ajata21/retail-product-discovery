@@ -2,7 +2,7 @@
 
 ## Study status
 
-- Status: All three initial retailer walkthroughs completed; Academy and REI screenshots present; visual verification pending; comparative synthesis, feature prioritization, and customer validation pending researcher review
+- Status: All three initial retailer walkthroughs completed; all 27 screenshots visually inspected; evidence qualifications recorded in Section 6; comparative synthesis, feature prioritization, and customer validation pending researcher review
 - Researcher: Andre Taylor
 - Research date(s): DICK'S — October 17, 2026, approximately 9:46–10:16 PM Central; Academy — October 18, 2026, Central (session time not recorded); REI — October 18–19, 2026, Central (exact session start/end times not recorded)
 - Audit version: Not recorded
@@ -93,14 +93,14 @@ Use qualitative evidence. No usability scores or rankings assigned; agree on a s
 
 ## 5. Retailer observations
 
-Direct observations below come from Andre Taylor's supplied walkthrough. Interpretations are separated in the final column. The researcher reviewed all seven DICK'S screenshots and confirmed their contents and observation mappings. Academy observations are researcher-supplied; the 12 named Academy screenshots are present in this checkout; their contents and observation mappings have not been visually verified. REI observations are researcher-supplied; all eight named screenshots are present, but their contents and observation mappings remain pending visual verification. Page URLs were not recorded. Approximate local file timestamps are listed in Section 6; interaction times were not independently verified.
+Direct observations below come from Andre Taylor's supplied walkthrough. Interpretations are separated in the final column. All 27 screenshot files have now been individually visually inspected against Section 6 and the corresponding Section 5 observations. Visible page states support the mappings subject to the explicit qualifications in Section 6; static images do not independently verify navigation actions, automatic persistence, selection order, or the absence of purchases. Address-bar text recovered from screenshots is recorded in Section 6; homepage URLs remain unrecorded. Approximate local file timestamps are supplied for DICK'S only; interaction times and original capture timestamps were not independently verified.
 
 ### 5.1 DICK'S Sporting Goods
 
 | Session field | Record |
 | --- | --- |
 | Date / time / time zone | October 17, 2026, approximately 9:46–10:16 PM Central |
-| Starting and relevant page URLs | Homepage → Men's Running Shoes → product page; exact URLs not recorded |
+| Starting and relevant page URLs | Homepage → Men's Running Shoes → product page; recovered category/product address-bar text in Section 6; homepage URL not recorded |
 | Selected store / displayed distance | DICK'S Dallas (Best Buy Plaza); distance not recorded |
 | Search / navigation path and applied filters | Site menus; men's size 10; $50–$100 and $100–$150; Pickup |
 | Product / variant inspected | Brooks Men's Adrenaline GTS 25; black colorway; size 10; Medium/D width |
@@ -126,7 +126,7 @@ Direct observations below come from Andre Taylor's supplied walkthrough. Interpr
 | --- | --- |
 | Researcher / date / time zone | Andre Taylor; October 18, 2026, Central; session time not recorded |
 | Browser / device | Chrome Incognito on Windows desktop; versions and viewport not recorded |
-| Starting and relevant page URLs | Academy homepage → Men's Running Shoes via website menus → product pages; exact URLs and menu sequence not recorded |
+| Starting and relevant page URLs | Academy homepage → Men's Running Shoes via website menus → product pages; recovered category/product address-bar text in Section 6; homepage URL and exact menu sequence not recorded |
 | Shopping ZIP / selected store | Manually entered 75231; Academy Sports + Outdoors, 6375 E. Northwest Highway, Dallas, TX 75231 |
 | Selected store / displayed distance | Dallas; approximately 688.3 miles on first Nike inventory check and approximately 0.6 miles on a subsequent check; cause not established |
 | Search / navigation path and applied filters | Site menus; men's size 10; custom $0–$150; Get It Today; nearby stores subsequently deselected to retain Dallas only |
@@ -140,17 +140,17 @@ Direct observations below come from Andre Taylor's supplied walkthrough. Interpr
 
 | Observation ID | Criterion | Direct observation | Evidence ID / URL | Interpretation / open question |
 | --- | --- | --- | --- | --- |
-| A-01 | Navigation and category | Navigated from Academy homepage using website menus to Men's Running Shoes. Initial category displayed 266 products, with brand/category shortcuts and filtering controls above listings. | Supplied Academy journey step 1; E-A01 pending | Counts are a session snapshot; no navigation usability conclusion drawn. |
-| A-02 | Filter controls | Clicking Filters opened a sidebar. Men's shoe size and price were separate categories. Both predefined price ranges and custom minimum/maximum price inputs were offered. | Steps 2–3; E-A02 / E-A03 pending | Availability of controls observed; customer comprehension untested. |
-| A-03 | Size and price filtering | Applied size 10 and custom $0–$150; both persisted and results decreased to 111 products. | Step 3; E-A04 pending | Academy's range includes prices below $50; DICK'S selected bands did not, limiting direct count comparisons. |
-| A-04 | Initial pickup filtering | Selecting “Get It Today” applied the filter directly, preserved size and price, and reduced results to 57. Store-selection control showed Dallas and nearby stores selected by default. | Step 4; E-A05 / E-A06 pending | This was a multi-store result set, not Dallas-only availability. |
-| A-05 | Dallas-only pickup filtering | After nearby stores were deselected, Dallas-only results decreased to 43. Cards displayed “Pick Up at Dallas.” | Step 5; E-A07 pending | Dallas-only state is used for the closer comparison with DICK'S selected-store results; counts do not establish equivalent inventory or coverage. |
-| A-06 | Primary product selection | Following the predetermined rule, opened the first visibly qualifying product with a pickup indication: Nike Men's Air Max Invigor Shoes. | Step 6; E-A07 / E-A08 pending | Protocol-driven choice, not a recommendation. |
-| A-07 | Nike variant and fulfillment state | Selected Grey/Green; size 10 carried over from results. Width D displayed automatically, Store Pickup was preselected, and price was $94.99. | Step 7; E-A08 pending | Persistence and preselection observed; effect on customers untested. |
-| A-08 | Nike pickup discrepancy | Nike page displayed “Available Nearby,” but detailed inventory panel marked Dallas “Out of Stock” for the selected variant despite the Dallas-only listing pickup indication. | Step 8; E-A08 / E-A09 pending | “Available Nearby” does not confirm stock at Dallas. Selected-store eligibility was not confirmed for this variant; cause of conflicting messages is unknown. |
-| A-09 | Nike inventory-panel change | First check displayed Dallas approximately 688.3 miles away and no nearby stores within 50 miles. A subsequent check displayed Dallas approximately 0.6 miles away and other stores with availability. | Step 9; E-A09 / E-A10 pending | Display changed; no technical cause inferred. Changed distances and nearby availability do not establish Dallas stock. |
-| A-10 | Explicit follow-up selection | Returned to the same Dallas-only filtered results and inspected the next eligible product, Adidas Men's Swift Run 1.0, as a follow-up check. | Step 10; E-A11 pending | Separate from the primary Nike check; does not replace or resolve its discrepancy. |
-| A-11 | Adidas follow-up messaging | Black color and size 10 were preserved; width D displayed automatically and Store Pickup was preselected. Price was $79.99, Dallas pickup “Today,” with “Only 2 left!” | Step 11; E-A12 pending | Displayed selected-store pickup and limited stock only; actual stock and readiness not verified. |
+| A-01 | Navigation and category | Navigated from Academy homepage using website menus to Men's Running Shoes. Initial category displayed 266 products, with brand/category shortcuts and filtering controls above listings. | Supplied Academy journey step 1; E-A01 | Counts are a session snapshot; no navigation usability conclusion drawn. |
+| A-02 | Filter controls | Clicking Filters opened a sidebar. Men's shoe size and price were separate categories. Both predefined price ranges and custom minimum/maximum price inputs were offered. | Steps 2–3; E-A02 / E-A03 | Availability of controls observed; customer comprehension untested. |
+| A-03 | Size and price filtering | Applied size 10 and custom $0–$150; both persisted and results decreased to 111 products. | Step 3; E-A04 | Academy's range includes prices below $50; DICK'S selected bands did not, limiting direct count comparisons. |
+| A-04 | Initial pickup filtering | Selecting “Get It Today” applied the filter directly, preserved size and price, and reduced results to 57. Store-selection control showed Dallas and nearby stores selected by default. | Step 4; E-A05 / E-A06 | This was a multi-store result set, not Dallas-only availability. |
+| A-05 | Dallas-only pickup filtering | After nearby stores were deselected, Dallas-only results decreased to 43. Cards displayed “Pick Up at Dallas.” | Step 5; E-A07 | Dallas-only state is used for the closer comparison with DICK'S selected-store results; counts do not establish equivalent inventory or coverage. |
+| A-06 | Primary product selection | Following the predetermined rule, opened the first visibly qualifying product with a pickup indication: Nike Men's Air Max Invigor Shoes. | Step 6; E-A07 / E-A08 | Protocol-driven choice, not a recommendation. |
+| A-07 | Nike variant and fulfillment state | Selected Grey/Green; size 10 carried over from results. Width D displayed automatically, Store Pickup was preselected, and price was $94.99. | Step 7; E-A08 | Persistence and preselection observed; effect on customers untested. |
+| A-08 | Nike pickup discrepancy | Nike page displayed “Available Nearby,” but detailed inventory panel marked Dallas “Out of Stock” for the selected variant despite the Dallas-only listing pickup indication. | Step 8; E-A08 / E-A09 | “Available Nearby” does not confirm stock at Dallas. Selected-store eligibility was not confirmed for this variant; cause of conflicting messages is unknown. |
+| A-09 | Nike inventory-panel change | First check displayed Dallas approximately 688.3 miles away and no nearby stores within 50 miles. A subsequent check displayed Dallas approximately 0.6 miles away and other stores with availability. | Step 9; E-A09 / E-A10 | Display changed; no technical cause inferred. Changed distances and nearby availability do not establish Dallas stock. |
+| A-10 | Explicit follow-up selection | Returned to the same Dallas-only filtered results and inspected the next eligible product, Adidas Men's Swift Run 1.0, as a follow-up check. | Step 10; E-A11 | Separate from the primary Nike check; does not replace or resolve its discrepancy. |
+| A-11 | Adidas follow-up messaging | Black color and size 10 were preserved; width D displayed automatically and Store Pickup was preselected. Price was $79.99, Dallas pickup “Today,” with “Only 2 left!” | Step 11; E-A12 | Displayed selected-store pickup and limited stock only; actual stock and readiness not verified. |
 | A-12 | Scope and stopping point | No order placed in either product check. Inventory accuracy and fulfillment speed were not verified. | Supplied journey step 12; no transaction evidence | Conclusions limited to public-facing online discovery and displayed BOPIS information. |
 
 ### 5.3 REI
@@ -159,7 +159,7 @@ Direct observations below come from Andre Taylor's supplied walkthrough. Interpr
 | --- | --- |
 | Researcher / date / time zone | Andre Taylor; October 18–19, 2026, Central; exact session start/end times not recorded |
 | Browser / device | Chrome Incognito on Windows desktop; versions and viewport not recorded |
-| Starting and relevant page URLs | REI homepage → Men's Running Shoes via website menus, rather than Google → product pages; exact URLs and menu sequence not recorded |
+| Starting and relevant page URLs | REI homepage → Men's Running Shoes via website menus, rather than Google → product pages; recovered category/product address-bar text in Section 6; homepage URL and exact menu sequence not recorded |
 | Shopping ZIP / selected store | 75231; REI Dallas, 5929 E Northwest Highway, Dallas, TX 75231; displayed distance not recorded |
 | Applied filters | Men's size 10; $50–$99.99 and $100–$199.99; Store Pickup at Dallas |
 | Primary product / variant | HOKA Bondi 9 Road-Running Shoes, Black/Black; size 10 selected again; color and Dallas store carried over |
@@ -187,51 +187,84 @@ Direct observations below come from Andre Taylor's supplied walkthrough. Interpr
 
 ## 6. Screenshot references
 
-All seven supplied DICK'S files exist in `research/screenshots/`. Links are relative to this audit. Filenames are retained as supplied. The researcher reviewed all seven DICK'S screenshots and confirmed the contents and observation mappings below. S-02 and S-03 show two scroll positions of the unfiltered results. Times below are researcher-supplied approximate local screenshot file timestamps, all October 17, 2026, Central; they are not independently verified interaction times or measured task durations. Exact source URLs remain not recorded.
+All seven supplied DICK'S files exist in `research/screenshots/`. Links are relative to this audit. Filenames are retained as supplied. The researcher reviewed all seven DICK'S screenshots and confirmed the contents and observation mappings below. S-02 and S-03 show two scroll positions of the unfiltered results. Times below are researcher-supplied approximate local screenshot file timestamps, all October 17, 2026, Central; they are not independently verified interaction times or measured task durations. Legible address-bar text is transcribed below as displayed (browser-hidden scheme/host prefixes are not invented). These are screenshot transcriptions, not independently opened or validated live URLs.
 
 | Screenshot ID | Retailer | Step / criterion | Relative file path | Source URL | Approximate local file timestamp (Central) | Context / annotation |
 | --- | --- | --- | --- | --- | --- | --- |
-| S-01 | DICK'S | Category overview | [dicks-01-category-overview.png](screenshots/dicks-01-category-overview.png) | Not recorded | October 17, 2026, approximately 9:46 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
-| S-02 | DICK'S | Unfiltered results — first scroll position | [dicks-02-initial-results.png](screenshots/dicks-02-initial-results.png) | Not recorded | October 17, 2026, approximately 9:49 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
-| S-03 | DICK'S | Unfiltered results — second scroll position | [dicks-03-initial-results.png](screenshots/dicks-03-initial-results.png) | Not recorded | October 17, 2026, approximately 9:50 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
-| S-04 | DICK'S | Size / price filtering | [dicks-04-size-price-filtered.png](screenshots/dicks-04-size-price-filtered.png) | Not recorded | October 17, 2026, approximately 10:03 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
-| S-05 | DICK'S | Pickup-filtered results | [dicks-05-pickup-filtered.png](screenshots/dicks-05-pickup-filtered.png) | Not recorded | October 17, 2026, approximately 10:06 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
-| S-06 | DICK'S | Product-page pickup information | [dicks-06-product-pickup.png](screenshots/dicks-06-product-pickup.png) | Not recorded | October 17, 2026, approximately 10:13 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
-| S-07 | DICK'S | Selected-store confirmation | [dicks-07-store-confirmation.png](screenshots/dicks-07-store-confirmation.png) | Not recorded | October 17, 2026, approximately 10:16 PM Central | Researcher-reviewed; file timestamp, not independently verified interaction time |
+| S-01 | DICK'S | Category overview | [dicks-01-category-overview.png](screenshots/dicks-01-category-overview.png) | `dickssportinggoods.com/f/mens-running-shoes` | October 17, 2026, approximately 9:46 PM Central | Visually inspected; mapping supported subject to qualifications below; file timestamp, not independently verified interaction time |
+| S-02 | DICK'S | Unfiltered results — first scroll position | [dicks-02-initial-results.png](screenshots/dicks-02-initial-results.png) | `dickssportinggoods.com/f/mens-running-shoes` | October 17, 2026, approximately 9:49 PM Central | Visually inspected; mapping supported subject to qualifications below; file timestamp, not independently verified interaction time |
+| S-03 | DICK'S | Unfiltered results — second scroll position | [dicks-03-initial-results.png](screenshots/dicks-03-initial-results.png) | `dickssportinggoods.com/f/mens-running-shoes` | October 17, 2026, approximately 9:50 PM Central | Visually inspected; mapping supported subject to qualifications below; file timestamp, not independently verified interaction time |
+| S-04 | DICK'S | Size / price filtering | [dicks-04-size-price-filtered.png](screenshots/dicks-04-size-price-filtered.png) | `dickssportinggoods.com/f/mens-running-shoes?filterFacets=5212:10.0;dickssportinggoodsofferprice:100-150,50-100` | October 17, 2026, approximately 10:03 PM Central | Visually inspected; mapping supported subject to qualifications below; file timestamp, not independently verified interaction time |
+| S-05 | DICK'S | Pickup-filtered results | [dicks-05-pickup-filtered.png](screenshots/dicks-05-pickup-filtered.png) | `dickssportinggoods.com/f/mens-running-shoes?filterFacets=5212:10.0;dickssportinggoodsofferprice:100-150,50-100;facetStore:BOPIS` | October 17, 2026, approximately 10:06 PM Central | Visually inspected; mapping supported subject to qualifications below; file timestamp, not independently verified interaction time |
+| S-06 | DICK'S | Product-page pickup information | [dicks-06-product-pickup.png](screenshots/dicks-06-product-pickup.png) | `dickssportinggoods.com/p/brooks-mens-adrenaline-gts-25-running-shoes-25bromrunndrnlngtsfbc/25bromrunndrnlngtsfbc?color=Black%2FBlack%2FEbony` | October 17, 2026, approximately 10:13 PM Central | Visually inspected; mapping supported subject to qualifications below; file timestamp, not independently verified interaction time |
+| S-07 | DICK'S | Selected-store confirmation | [dicks-07-store-confirmation.png](screenshots/dicks-07-store-confirmation.png) | `dickssportinggoods.com/p/brooks-mens-adrenaline-gts-25-running-shoes-25bromrunndrnlngtsfbc/25bromrunndrnlngtsfbc?color=Black%2FBlack%2FEbony` | October 17, 2026, approximately 10:16 PM Central | Visually inspected; mapping supported subject to qualifications below; file timestamp, not independently verified interaction time |
 
 ### Academy evidence inventory
 
-Checked `research/screenshots/`: all 12 Academy files named below are present. Links are relative to this audit. E-A01–E-A12 are evidence identifiers mapped from the supplied journey; screenshot contents and observation mappings remain pending visual verification. Academy source URLs and original capture timestamps are not recorded; checkout timestamps must not be treated as capture times or task durations.
+Checked `research/screenshots/`: all 12 Academy files named below are present. Links are relative to this audit. E-A01–E-A12 have been visually inspected; visible contents support their mappings with the store-scope qualification below. Address-bar text is recorded per image; original capture timestamps are not recorded; checkout timestamps must not be treated as capture times or task durations.
 
-| Evidence ID | Relative screenshot link | Verification status |
-| --- | --- | --- |
-| E-A01 | [academy-01-category-overview.png](screenshots/academy-01-category-overview.png) | Present; contents and timestamp not verified |
-| E-A02 | [academy-02-initial-filters.png](screenshots/academy-02-initial-filters.png) | Present; contents and timestamp not verified |
-| E-A03 | [academy-03-initial-filters.png](screenshots/academy-03-initial-filters.png) | Present; contents and timestamp not verified |
-| E-A04 | [academy-04-size-price-filtered.png](screenshots/academy-04-size-price-filtered.png) | Present; contents and timestamp not verified |
-| E-A05 | [academy-05-pickup-filtered.png](screenshots/academy-05-pickup-filtered.png) | Present; contents and timestamp not verified |
-| E-A06 | [academy-06-store-selection.png](screenshots/academy-06-store-selection.png) | Present; contents and timestamp not verified |
-| E-A07 | [academy-07-dallas-only-pickup.png](screenshots/academy-07-dallas-only-pickup.png) | Present; contents and timestamp not verified |
-| E-A08 | [academy-08-product-pickup.png](screenshots/academy-08-product-pickup.png) | Present; contents and timestamp not verified |
-| E-A09 | [academy-09-store-availability.png](screenshots/academy-09-store-availability.png) | Present; contents and timestamp not verified |
-| E-A10 | [academy-10-store-availability-updated.png](screenshots/academy-10-store-availability-updated.png) | Present; contents and timestamp not verified |
-| E-A11 | [academy-11-followup-results.png](screenshots/academy-11-followup-results.png) | Present; contents and timestamp not verified |
-| E-A12 | [academy-12-followup-product.png](screenshots/academy-12-followup-product.png) | Present; contents and timestamp not verified |
+| Evidence ID | Relative screenshot link | Verification status | Source address-bar text |
+| --- | --- | --- | --- |
+| E-A01 | [academy-01-category-overview.png](screenshots/academy-01-category-overview.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `academy.com/c/mens/mens-footwear/mens-athletic-sneakers/mens-running-shoes` |
+| E-A02 | [academy-02-initial-filters.png](screenshots/academy-02-initial-filters.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `academy.com/c/mens/mens-footwear/mens-athletic-sneakers/mens-running-shoes` |
+| E-A03 | [academy-03-initial-filters.png](screenshots/academy-03-initial-filters.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `academy.com/c/mens/mens-footwear/mens-athletic-sneakers/mens-running-shoes` |
+| E-A04 | [academy-04-size-price-filtered.png](screenshots/academy-04-size-price-filtered.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `academy.com/c/mens/mens-footwear/mens-athletic-sneakers/mens-running-shoes?&storeid=78&facet=%27facet_Price%27:0%20TO%20150&facet=%27facet_mensShoeSize%27:%2710%27` |
+| E-A05 | [academy-05-pickup-filtered.png](screenshots/academy-05-pickup-filtered.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `academy.com/c/mens/mens-footwear/mens-athletic-sneakers/mens-running-shoes?&storeid=78&facet=%27facet_Price%27:0%20TO%20150&facet=%27facet_mensShoeSize%27:%2710%27&facet=deliveryFilter.inventory_pick%3A78%20OR%20inventory_sts%3A78&bopisEligible=1&isSTS1=1` |
+| E-A06 | [academy-06-store-selection.png](screenshots/academy-06-store-selection.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `academy.com/c/mens/mens-footwear/mens-athletic-sneakers/mens-running-shoes?&storeid=78&facet=%27facet_Price%27:0%20TO%20150&facet=%27facet_mensShoeSize%27:%2710%27&facet=deliveryFilter.inventory_pick%3A78%20OR%20inventory_sts%3A78&bopisEligible=1&isSTS1=1` |
+| E-A07 | [academy-07-dallas-only-pickup.png](screenshots/academy-07-dallas-only-pickup.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `academy.com/c/mens/mens-footwear/mens-athletic-sneakers/mens-running-shoes?&storeid=78&facet=%27facet_Price%27:0%20TO%20150&facet=%27facet_mensShoeSize%27:%2710%27&facet=deliveryFilter.inventory_pick%3A78%20OR%20inventory_sts%3A78&bopisEligible=1&isSTS1=1` |
+| E-A08 | [academy-08-product-pickup.png](screenshots/academy-08-product-pickup.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `academy.com/p/nike-mens-air-max-invigor-running-shoes?sku=10-d-grey-green&dmFilter=freePickUpId` |
+| E-A09 | [academy-09-store-availability.png](screenshots/academy-09-store-availability.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `academy.com/p/nike-mens-air-max-invigor-running-shoes?sku=10-d-grey-green&dmFilter=freePickUpId` |
+| E-A10 | [academy-10-store-availability-updated.png](screenshots/academy-10-store-availability-updated.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `academy.com/p/nike-mens-air-max-invigor-running-shoes?sku=10-d-grey-green&dmFilter=freePickUpId` |
+| E-A11 | [academy-11-followup-results.png](screenshots/academy-11-followup-results.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `academy.com/c/mens/mens-footwear/mens-athletic-sneakers/mens-running-shoes?&storeid=78&facet=%27facet_mensShoeSize%27:%2710%27&facet=%27facet_Price%27:0%20TO%20150&facet=deliveryFilter.inventory_pick%3A78%20OR%20inventory_sts%3A78&bopisEligible=1&isSTS1=1` |
+| E-A12 | [academy-12-followup-product.png](screenshots/academy-12-followup-product.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `academy.com/p/adidas-mens-swift-run-10-shoes?sku=10-d-black&dmFilter=freePickUpId` |
 
 ### REI evidence inventory
 
-All eight named REI files are present in `research/screenshots/`; links below are relative to this audit. Evidence mappings follow the supplied journey and filenames; screenshot contents and mappings remain pending visual verification. Source URLs and original capture timestamps are not recorded. Checkout timestamps are not capture times or task durations.
+All eight named REI files are present in `research/screenshots/`; links below are relative to this audit. All eight images have been visually inspected against their mapped observations; visible contents support the mappings with the qualifications below. Address-bar text is recorded per image where present; original capture timestamps are not recorded. Checkout timestamps are not capture times or task durations.
 
-| Evidence ID | Step / criterion | Relative screenshot link | Verification status |
-| --- | --- | --- | --- |
-| E-R01 | Category overview and listing information | [rei-01-category-overview.png](screenshots/rei-01-category-overview.png) | Present; contents and capture timestamp not verified |
-| E-R02 | Price filter options | [rei-02-price-filter-options.png](screenshots/rei-02-price-filter-options.png) | Present; contents and capture timestamp not verified |
-| E-R03 | Size / price filtered results | [rei-03-size-price-filtered.png](screenshots/rei-03-size-price-filtered.png) | Present; contents and capture timestamp not verified |
-| E-R04 | Dallas pickup-filtered results and Bondi 9 card | [rei-04-pickup-filtered.png](screenshots/rei-04-pickup-filtered.png) | Present; contents and capture timestamp not verified |
-| E-R05 | Bondi 9 selected variant and pickup | [rei-05-product-pickup.png](screenshots/rei-05-product-pickup.png) | Present; contents and capture timestamp not verified |
-| E-R06 | Arahi 8 follow-up results | [rei-06-followup-results.png](screenshots/rei-06-followup-results.png) | Present; contents and capture timestamp not verified |
-| E-R07 | Initial Arahi 8 variant | [rei-07-followup-product.png](screenshots/rei-07-followup-product.png) | Present; contents and capture timestamp not verified |
-| E-R08 | Additional Arahi 8 colorway availability | [rei-08-variant-availability.png](screenshots/rei-08-variant-availability.png) | Present; contents and capture timestamp not verified |
+| Evidence ID | Step / criterion | Relative screenshot link | Verification status | Source address-bar text |
+| --- | --- | --- | --- | --- |
+| E-R01 | Category overview and listing information | [rei-01-category-overview.png](screenshots/rei-01-category-overview.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `rei.com/c/mens-running-shoes` |
+| E-R02 | Price filter options | [rei-02-price-filter-options.png](screenshots/rei-02-price-filter-options.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | Not available: cropped image omits browser address bar |
+| E-R03 | Size / price filtered results | [rei-03-size-price-filtered.png](screenshots/rei-03-size-price-filtered.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `rei.com/c/mens-running-shoes?ir=category%3Amens-running-shoes&r=c%3Bsize%3A10%3Bprice%3A%2450.00+to+%2499.99%7C%24100.00+to+%24199.99` |
+| E-R04 | Dallas pickup-filtered results and Bondi 9 card | [rei-04-pickup-filtered.png](screenshots/rei-04-pickup-filtered.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `rei.com/c/mens-running-shoes?ir=category%3Amens-running-shoes&r=c%3Bsize%3A10%3Bprice%3A%2450.00+to+%2499.99%7C%24100.00+to+%24199.99%3Bstores%3A45` |
+| E-R05 | Bondi 9 selected variant and pickup | [rei-05-product-pickup.png](screenshots/rei-05-product-pickup.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `rei.com/product/242684/hoka-bondi-9-road-running-shoes-mens?color=BLACK%252FBLACK&store=45` |
+| E-R06 | Arahi 8 follow-up results | [rei-06-followup-results.png](screenshots/rei-06-followup-results.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `rei.com/c/mens-running-shoes?ir=category%3Amens-running-shoes&r=c%3Bsize%3A10%3Bprice%3A%2450.00+to+%2499.99%7C%24100.00+to+%24199.99%3Bstores%3A45` |
+| E-R07 | Initial Arahi 8 variant | [rei-07-followup-product.png](screenshots/rei-07-followup-product.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `rei.com/product/249138/hoka-arahi-8-road-running-shoes-mens?color=STARDUST%252FCOSMIC%2520GREY&store=45` |
+| E-R08 | Additional Arahi 8 colorway availability | [rei-08-variant-availability.png](screenshots/rei-08-variant-availability.png) | Visually inspected; mapping supported subject to qualifications below; capture timestamp not verified | `rei.com/product/249138/hoka-arahi-8-road-running-shoes-mens?color=STARDUST%252FCOSMIC%2520GREY&store=45` |
+
+### Visual verification scope and unresolved evidence qualifications
+
+All 27 expected files are present, readable, and depict the expected retailer/page type. No whole-image filename mismatch was found. Blur behind Academy overlays is part of the captured interface; the foreground controls are readable. Verification below concerns visible states, not proof of actions between screenshots or real inventory/fulfillment performance.
+
+| Evidence IDs | Corresponding observations | Visual check and qualification |
+| --- | --- | --- |
+| S-01 | D-01 | Category, Dallas header, road/trail links, and fulfillment controls match. Homepage/menu navigation is walkthrough evidence. |
+| S-02, S-03 | D-02 | 378 products visible in S-02; brand/size and lower filter categories visible across the two scroll positions. |
+| S-04 | D-03, D-04 | Size 10, both price chips, 111 products, Pickup (17), and “See Price in Cart” visible. Closed price controls do not independently prove absence of a custom input. |
+| S-05 | D-05, D-06 | Dallas pickup active, prior filters retained, 17 products, and first Brooks card at $124.98 visible. Opening sequence follows walkthrough. |
+| S-06, S-07 | D-06, D-07, D-08 | Black Brooks product, Medium/D, “Ready tomorrow,” and change from shipping to selected pickup with Dallas/“Only 1 left!” match. Product price is supported by S-05; selected size is above the captured viewport. Size reselection and action order remain walkthrough-supplied. |
+| E-A01 | A-01 | 266 items, category shortcuts and controls match; menu navigation is not captured. |
+| E-A02, E-A03 | A-02 | Separate size/price categories, size options, price bands, and empty custom Min/Max inputs match. |
+| E-A04 | A-03 | 111 items, size 10 and $0–$150 chips match; input/application actions are not captured. |
+| E-A05, E-A06 | A-04 | 57 items, retained filters, “Dallas & Nearby Stores,” and checked nearby stores match. Default/automatic selection is walkthrough-supplied. |
+| E-A07 | A-05, A-06, A-08 | 43 items, first Nike card, and “Pick Up at Dallas” match. **Store-scope qualification:** the chip still reads “Dallas & Nearby Stores”; deselected checkboxes are not shown. Dallas-only scope is researcher-reported, not independently confirmed by this screenshot. |
+| E-A08 | A-06, A-07, A-08 | Nike Grey/Green, size 10, width D, $94.99, selected pickup and “Available Nearby” match. Persistence/preselection actions remain walkthrough-supplied. |
+| E-A09, E-A10 | A-08, A-09 | Dallas out of stock in both; 688.3 mi/no stores within 50 miles versus 0.6 mi/available nearby stores match. No cause established. |
+| E-A11 | A-10 | 43-result follow-up listing and Adidas card match. “Dallas & Nearby Stores” remains visible; Dallas-only scope and return/selection order are walkthrough-supplied. |
+| E-A12 | A-11 | Adidas black, size 10, width D, $79.99, selected Dallas pickup “Today,” limited stock and “Only 2 left!” match. Automatic persistence/preselection cannot be proved from this still. |
+| E-R01 | R-01, R-02 | 352 products, Dallas pickup (81), two-hour readiness, separate filter scrollbar, and card specifications match. Actual independent scrolling/menu navigation is walkthrough-supplied. |
+| E-R02 | R-03 | Readable price-band crop; no custom input visible within captured price section. Browser address bar is absent; source URL cannot be recovered from this image. |
+| E-R03 | R-04 | Size 10 and price chips, 233 products, and above-$150 prices match. |
+| E-R04 | R-05, R-06, R-07 | 67 products, Dallas pickup active, retained chips, no individual store-specific card pickup message, and first Bondi card $140.93–$175 match. |
+| E-R05 | R-07, R-08 | Bondi Black/Black, $175, size 10, selected Dallas pickup tomorrow after 11:00am and “In Stock” match. Reselection/persistence sequence remains walkthrough-supplied. |
+| E-R06 | R-09 | Pickup-filtered results, checked size 10, and Arahi card match; return and next-product selection order are walkthrough-supplied. |
+| E-R07 | R-10 | Arahi Stardust/Cosmic Grey, $120.93, size 10, Dallas pickup out of stock, shipping selected match. |
+| E-R08 | R-11 | Arahi Stellar Grey/Stardust, $150, size 10, selected Dallas pickup tomorrow after 11:00am and “In Stock” match. **URL/state discrepancy:** address bar still contains `color=STARDUST%252FCOSMIC%2520GREY`, as in E-R07. Transcription is preserved; it must not be treated as a verified URL encoding the displayed Stellar Grey/Stardust selection. Cause unknown. |
+
+A-12 and R-12 are researcher statements about scope and stopping, with no transaction evidence; screenshots do not independently establish non-purchase or validate inventory accuracy. The same limit applies to D-08's no-purchase/performance scope.
+
+Address-bar strings above include complete visible query text where accurately legible; no omitted parameters have been reconstructed. Query-free category addresses are known base pages, not substitutes for verified complete filtered URLs. A category or product URL does not by itself prove size, store scope, live availability, or the exact displayed variant. Homepage addresses remain unrecorded. Capture timestamps remain unverified; no checkout timestamp was substituted.
 
 ## 7. Limitations
 
@@ -240,15 +273,15 @@ All eight named REI files are present in `research/screenshots/`; links below ar
 | After-hours research | Session occurred after normal shopping hours, which may influence “Ready tomorrow”; actual preparation time not evaluated. | Verify store-hours context before interpreting the estimate. |
 | Single researcher walkthrough | No participant feedback or validated customer frustrations. | Validate interpretations with customers. |
 | Limited stores, products, and sessions | DICK'S inspected one product; Academy inspected a primary Nike product and a distinct Adidas follow-up; REI inspected Bondi 9, then Arahi 8 and an additional Arahi colorway. Displayed prices, counts, and inventory are contextual snapshots; inventory accuracy not tested. | Repeat before generalizing. |
-| Incomplete metadata | Versions, viewport, account state, permissions, URLs, and distance not recorded. Approximate file timestamps are available; interaction times were not independently verified. | Confirm available details without guessing. |
+| Incomplete metadata | Versions, viewport, account state, permissions, homepage URLs, and some distance details not recorded; legible screenshot address-bar text is now recorded in Section 6. Approximate file timestamps are available; interaction times were not independently verified. | Confirm available details without guessing. |
 | Price-band coverage | DICK'S and REI selected ranges omit products below $50 despite a maximum-only budget; REI's upper band also includes prices above $150. Academy used custom $0–$150. | Assess omitted qualifying products and price-control behavior. |
 | Scope exclusions | No purchase, physical operations, employee workflow, actual fulfillment performance, or inventory-record accuracy evaluation. | Keep claims within online discovery and displayed BOPIS eligibility. |
 | Untested criteria | Accessibility and comparison support not systematically evaluated. | Evaluate separately before drawing conclusions. |
-| Incomplete competitor evidence | All three walkthroughs supplied; Academy and REI screenshots present with visual verification pending. | Verify evidence and conduct researcher review before broader synthesis. |
+| Incomplete competitor evidence | All three walkthroughs supplied; all 27 images visually inspected with store-scope, viewport/action, and URL/state qualifications in Section 6. | Resolve evidence qualifications and conduct researcher review before broader synthesis. |
 
 ## 8. Cross-retailer comparison
 
-Comparative synthesis, feature prioritization, and customer validation remain pending researcher review. Factual walkthrough observations are recorded below; Academy and REI screenshot contents and mappings await visual verification. Academy's initial 57 pickup results covered multiple stores; 43 were Dallas-only, compared with DICK'S 17 and REI's 67 selected-store results. These counts are not equivalent budget-qualified assortments: DICK'S bands exclude prices below $50; Academy used $0–$150; REI's $50–$199.99 coverage excludes prices below $50 and includes prices above $150. REI's Bondi 9 starting price differed from the selected colorway price, and Arahi availability varied by colorway. Different sessions, assortments, store scope, and primary versus follow-up checks further limit direct numerical comparisons. Distinguish untested features from confirmed absence. No winner or ranking assigned.
+Comparative synthesis, feature prioritization, and customer validation remain pending researcher review. Factual walkthrough observations are recorded below; All 27 screenshots have been visually inspected; Section 6 records remaining evidence qualifications, including Academy Dallas-only scope and the REI Arahi URL/state discrepancy. Academy's initial 57 pickup results covered multiple stores; 43 were Dallas-only, compared with DICK'S 17 and REI's 67 selected-store results. These counts are not equivalent budget-qualified assortments: DICK'S bands exclude prices below $50; Academy used $0–$150; REI's $50–$199.99 coverage excludes prices below $50 and includes prices above $150. REI's Bondi 9 starting price differed from the selected colorway price, and Arahi availability varied by colorway. Different sessions, assortments, store scope, and primary versus follow-up checks further limit direct numerical comparisons. Distinguish untested features from confirmed absence. No winner or ranking assigned.
 
 | Criterion | DICK'S Sporting Goods | Academy Sports + Outdoors | REI | Supporting evidence IDs |
 | --- | --- | --- | --- | --- |
@@ -267,7 +300,7 @@ Comparative synthesis, feature prioritization, and customer validation remain pe
 
 - Evidence-supported comparative patterns: Pending.
 - Meaningful cross-retailer differences: Pending.
-- Unresolved questions: Academy and REI screenshot verification, Nike message discrepancy and distance-display change, REI general versus variant-specific pickup messaging, and customer response remain pending; no technical cause established.
+- Unresolved questions: Section 6 evidence qualifications, Nike message discrepancy and distance-display change, REI general versus variant-specific pickup messaging, and customer response remain pending; no technical cause established.
 
 ## 9. Hypotheses
 
@@ -282,8 +315,8 @@ These are proposed, unvalidated interpretations, not findings about customer fru
 
 | Action | Rationale / evidence | Owner | Target date | Status |
 | --- | --- | --- | --- | --- |
-| Add source URLs and any additional capture metadata if available | DICK'S screenshot contents and mappings confirmed by researcher; Academy and REI visual verification pending; URLs remain not recorded and file timestamps do not independently verify interaction times | Not assigned | Not set | Pending |
+| Add source URLs and any additional capture metadata if available | All 27 screenshots visually inspected; legible address-bar text recorded in Section 6; homepage URLs/capture metadata and evidence qualifications remain unresolved; file timestamps do not independently verify interaction times | Not assigned | Not set | Pending |
 | Confirm price-cap tax/fee treatment, price-band coverage, missing setup details, and store distance | Avoid assumptions and assess products below $50 | Not assigned | Not set | Pending |
-| Verify Academy and REI screenshots and conduct comparative researcher review | All three initial walkthroughs documented; 12 Academy and 8 REI screenshots present; comparative synthesis and feature prioritization pending | Not assigned | Not set | Pending |
+| Resolve screenshot evidence qualifications and conduct comparative researcher review | All 27 images visually inspected; Section 6 qualifications, comparative synthesis, and feature prioritization pending | Not assigned | Not set | Pending |
 | Verify Academy and REI source URLs, capture metadata, and evidence mappings | Confirm evidence mappings, differing distance displays, and selected-variant/store price and pickup messaging without inferring causes | Andre Taylor | Not set | Pending |
 | Define participant validation and agree on any future scoring rubric | Hypotheses unvalidated; no usability scores assigned | Not assigned | Not set | Pending |
