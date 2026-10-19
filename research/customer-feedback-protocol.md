@@ -1,6 +1,6 @@
 # Public Customer Feedback Research Protocol
 
-Status: Proposed protocol for researcher review. No public feedback has been searched, collected, or analyzed for this document. Planned researcher: Andre Taylor.
+Status: Initial search pass attempted with incomplete screening provenance; Amendment A-01 approved before collecting any formally accepted feedback records. Follow-up source verification not started in this log. Researcher: Andre Taylor. Historical activity is researcher-reported; exact dates and missing execution details are not reconstructed.
 
 Project: Independent undergraduate PM portfolio research on sporting-goods e-commerce discovery and local Buy Online, Pick Up In Store (BOPIS).
 
@@ -30,7 +30,9 @@ Initial source classes are public Reddit discussions, public consumer reviews, a
 
 **Publication window:** January 1, 2024 through October 18, 2026, inclusive. Record each actual search date in `YYYY-MM-DD` format with time zone. Search-engine date filters are aids; confirm publication dates at the original source. Retain the platform's displayed date/date precision; do not invent a day or infer publication time from search ranking. Undated items go into an uncertain-date/background appendix and do not count toward the primary target. Older material, if retained, is background only. Later publications are outside this initial window.
 
-### Fixed initial search plan
+### Original initial search design — retained for provenance
+
+The following 18-search plan is preserved as the initial design, not a claim of full execution. Amendment A-01 below governs follow-up screening and supersedes the ranking/sequence and initial time-limit rules for that phase only.
 
 Before collection, record the search engine, locale, signed-in state, and platform/sort options. Use one public search engine consistently; use native review search only as a logged fallback when individual reviews are not indexed. Fix the source domains as follows for this first pass:
 
@@ -79,6 +81,8 @@ Retain a relevant reported experience even if its author speculates about the ca
 
 ## 6. Sampling and Stopping Rule
 
+The top-five, sequence, and two-hour rules below describe the original initial design. They were not consistently verifiable in execution. Follow-up uses Amendment A-01 instead; all unchanged eligibility, independence, and integrity rules continue to apply.
+
 Aim initially for **10–15 distinct, relevant customer experiences**, subject to availability. This is a planning range, not a retailer/candidate quota or a minimum to manufacture. Do not include irrelevant or insufficiently contextual evidence to reach the target, and do not discard eligible accounts merely because they fall outside preferred themes or exceed 15. Apply the existing independence and deduplication rules.
 
 For each planned search, screen the first five non-advertising results in their displayed order. For each relevant discussion thread, inspect the original post and up to ten initially visible comments in the recorded platform default sort order. Use that rule consistently: do not re-sort to favor a sentiment, expand collapsed replies, or load more comments. For review listings, inspect up to ten initially visible reviews in the recorded default sort order; a direct review permalink is one review, not an invitation to expand the listing. Log fewer visible items and any access restriction. If direct review links are unavailable, record the listing URL plus a stable locator such as review date, rating, and visible text fragment, without copying unnecessary author identifiers.
@@ -92,6 +96,20 @@ Maintain a search log for every query, including zero-result and unsuccessful se
 | To be populated during collection | | | | | | |
 
 Record every screened result's disposition, including duplicates and excluded examples; separate search-result counts from unique experience counts. This is a bounded purposive/convenience sample shaped by indexing and access, not representative sampling or statistical saturation. Search rankings and public content may change, limiting exact replication.
+
+### Amendment A-01: Purposive Source Verification
+
+**Approval and timing:** Approved by the researcher through the instruction to make this amendment, before collecting any formally accepted feedback records. No exact approval or historical search dates are supplied here. This is a prospective authorization to verify original sources, not retroactive certification of initial screening.
+
+**Reason:** The researcher reports that S-01–S-18 were attempted through ChatGPT-assisted web research, but search-result rankings were not consistently available, individual reviews were sometimes inaccessible, and some relevant accounts were discovered outside the prescribed sequence. Consequently, the top-five ranking rule, screening depth, and sequence cannot be consistently verified. Preserve the original plan and any recoverable records; mark missing provenance explicitly. Do not label an individual search fully screened without its complete, verifiable screening record. Do not reconstruct ranks, queries, dates, result counts, URLs, elapsed time, or exclusions from memory or from the planned templates.
+
+**Authorized follow-up:** Conduct a purposive qualitative review of publicly accessible Reddit discussions and individual consumer/app reviews. Start with recoverable original-source leads from the attempted pass; record further discovery routes, queries, referrals, and platform/domain choices explicitly. Sources found outside S-01–S-18 may be considered with a documented selection reason; do not assign them an invented historical search rank or sequence. The original domains remain starting points, not verified coverage; record any additional public review platform and why it was examined. Broader e-commerce context remains separately labeled and cannot stand in for retailer-specific evidence.
+
+**Bounded process:** Use a maximum of **90 minutes of active follow-up screening**, separate from the original pass's unrecorded elapsed time. Count source discovery/opening, date/context verification, screening, deduplication, and logging. Create V-01 onward in the analysis log for every source examined, including inaccessible, excluded, duplicate, and background sources; record actual review date/time zone, active/cumulative minutes, and stop position. For a Reddit thread, inspect the original post and up to ten initially visible comments in the recorded default sort; do not load more or re-sort to favor a sentiment. Review individual consumer/app accounts, not platform aggregate ratings or search snippets. Stop at 90 minutes or when the documented candidate-source list is exhausted, whichever comes first. Mark incomplete checks and coverage gaps; any further expansion needs separate approval.
+
+**Acceptance gate:** Before assigning FB-001 onward as accepted evidence, inspect the original account and record its original URL (individual permalink where possible; otherwise a publicly accessible original listing URL plus a stable locator for the inspected account), source type, verified original publication date/precision, actual review date, discovery route, relevant context, selection reason, experience basis, candidate/emergent classification, independence checks, and inclusion decision. A listing counts only if the individual account and its date are actually inspectable. Unknown or ambiguous publication dates, inaccessible originals, or insufficient context cannot enter the primary accepted corpus; retain them as excluded/unverified or separate background. Keep the original publication window and never infer a date from search metadata or an update date.
+
+Seek supporting, contradictory, positive, mixed, and unexpected experiences, including evidence that later clarification was sufficient. Keep **10–15 independent relevant experiences** as a planning target, not a quota or reason to include weak evidence. Do not stop solely because the target is reached; record reasons for selecting and rejecting sources, missing perspectives, and alternative explanations. The method cannot support representative sampling, statistical prevalence, statistical saturation, verified inventory defects, technical root causes, or claims of completed interviews. All existing privacy, quotation, deduplication, evidence-classification, inclusion/exclusion, ethics, and research-integrity requirements remain in force. This amendment changes source selection/provenance handling, not the standard of factual claims.
 
 ## 7. Evidence Extraction Template
 
@@ -156,8 +174,8 @@ This framework supports qualitative prioritization, not quantitative validation.
 
 ## 11. Next Steps
 
-1. Review and finalize the proposed source domains, two-hour screening limit, 18-query schedule, default-sort/comment rule, query syntax, date handling, and independence rules before searching. Record any amendments and their reasons.
-2. Execute the bounded plan and create `research/customer-feedback-analysis.md` separately when actual collection begins. Include the dated search log, extraction records, exclusions/duplicates, coverage gaps, and stopping reason. That file is not created by this protocol task.
+1. Preserve the initial 18-search design and incomplete execution record. Follow approved Amendment A-01 for prospective source verification, using its 90-minute limit and V-log; record actual settings, source choices, and any further amendments.
+2. Maintain `research/customer-feedback-analysis.md` as the separate execution and source-verification record. Include the dated search log, extraction records, exclusions/duplicates, coverage gaps, and stopping reason. Keep the attempted initial pass separate from follow-up verification and formally accepted evidence.
 3. Analyze reported experiences with the codebook; compare C1–C4 and emergent themes against counterevidence. Keep findings, interpretations, and proposed actions distinct and traceable to feedback IDs.
 4. Review the evidence and prioritize a customer problem provisionally, or document why evidence does not yet justify a choice. Public feedback may guide research direction without proving causality or prevalence.
 5. Draft a conditional PRD only if a problem is sufficiently supported for a focused portfolio experiment. Define non-goals and testable communication/selection requirements, then demonstrate a narrow functional prototype with simulated data. State the remaining limits of evaluating it without recruited users or live retail integrations.
