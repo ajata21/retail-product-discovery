@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Fieldwork — running shoes & pickup</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="fixtures.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to shoes</a>
+  <div class="notice">Independent shopping prototype · Simulated availability · No ordering or live inventory</div>
+  <header class="masthead"><a href="#results" class="wordmark" aria-label="Fieldwork results">FIELDWORK<span> / </span></a><span class="masthead-note">A clearer way to choose.</span></header>
+  <main id="main">
+    <section class="intro" aria-labelledby="page-title"><p class="eyebrow">MEN'S / RUNNING SHOES</p><h1 id="page-title">Your pair. Your pickup store.</h1><p>Confirmed pickup matches for the pictured color, size and width.</p></section>
+    <section class="filters" aria-label="Your shopping preferences">
+      <label>Pickup store<select id="store"><option value="">Choose a store</option><option value="dallas" selected>Dallas · Northwest Highway</option><option value="lewisville">Lewisville · Stemmons Freeway</option></select></label>
+      <label>US men's size<select id="size"><option value="">Choose size</option><option>9</option><option selected>10</option><option>11</option></select></label>
+      <label>Width<select id="width"><option value="">Choose width</option><option value="D" selected>Standard / D</option><option value="2E">Wide / 2E</option></select></label>
+      <label>Maximum price ($)<input id="max-price" type="number" min="0" max="500" step="1" value="150" inputmode="decimal"></label>
+    </section>
+    <p id="price-error" class="error" hidden>Enter a maximum price from $0 to $500.</p>
+    <p class="scope-note">Selected-store pickup is an active filter · Three-product demo · Nearby stores are excluded until you explicitly check one.</p>
+    <p id="scenario-notice" class="scenario-notice" hidden></p>
+    <section id="results-view" aria-labelledby="results-title">
+      <fieldset id="preferences" class="preferences"><legend>Color preferences <span>Any color lets us picture the first confirmed qualifying color.</span></legend><div id="preference-controls"></div></fieldset><p id="return-notice" class="scope-note" hidden></p><div class="results-heading"><h2 id="results-title">Confirmed pickup matches <span id="result-count"></span></h2><label class="sort-label">Sort<select id="sort"><option value="original">Featured order</option><option value="price">Price: low to high</option></select></label></div>
+      <p id="results-notice" class="results-notice"></p><div id="grid" class="grid"></div><p id="empty" class="empty" hidden>No matching products. All three products are confirmed not to meet these requirements.</p><section id="exceptions" class="exceptions" aria-labelledby="exception-title" hidden><h3 id="exception-title">Not in confirmed matches</h3><div id="exception-rows"></div></section>
+    </section>
+    <section id="details-view" aria-labelledby="details-title" hidden>
+      <button id="return" class="back">← Return to results</button><h2 id="details-title" tabindex="-1">Shoe details</h2><div id="detail-slot"></div>
+      <p class="detail-note">An illustrative product view. Compare the exact color, size, width, and store above. Availability does not reserve a pair; no orders can be placed here.</p>
+    </section>
+    <aside class="shipping"><details><summary>Shipping is separate from pickup</summary><label>Shipping area<select id="shipping"><option value="75231">Dallas · 75231</option><option value="61820">Champaign · 61820</option><option value="unknown">Other area</option></select></label><p id="shipping-status">Shipping eligibility is not evaluated in this prototype. Changing this area does not change your pickup store.</p></details></aside>
+    <details id="demo-controls" class="demo"><summary>Demo controls <span>— scenarios for review</span></summary><div class="demo-body"><p>All availability is simulated. The default qualifying-color scenario and all special cases are invented, not research findings.</p><label>Scenario<select id="scenario"><option value="other-color">Qualifying Nike color · invented demonstration</option><option value="multiple">Several Nike colors qualify · fixed order · invented</option><option value="explicit">Explicit Grey / Green preference · invented</option><option value="historical">Historically inspired original outcomes · other variants unknown</option><option value="none">Complete coverage: no qualifying variants · invented</option><option value="unknown">All information unknown · invented</option><option value="partial">Confirmed matches + incomplete results · invented</option><option value="variant-price">Nike Black costs $159.99 · invented</option><option value="incomplete">Missing size · invented</option><option value="slow">Slow lookup · invented</option><option value="failure">Failure and retry · invented</option><option value="stale">Stale information · invented</option><option value="obsolete">Obsolete response after preference change · invented</option></select></label><button id="reset" class="secondary">Reset this scenario</button><p id="scenario-description"></p><p id="race-log"></p><p>Reset restores Dallas, size 10, D width, $150, Any color and excluded nearby stores, except the explicit-preference and missing-size cases. The obsolete-response demo explicitly switches the Nike preference from Grey / Green to Black after 120 ms.</p></div></details>
+  </main>
+  <footer><strong>FIELDWORK /</strong><p>Choose a pair. Keep the details clear.</p><small>Local concept study · Illustrative shoes · Simulated examples, never current stock.</small></footer>
+  <div id="announcer" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  <noscript>This prototype needs JavaScript enabled. All scripts are local files.</noscript>
+</body>
+</html>

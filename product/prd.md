@@ -1,6 +1,6 @@
 # Draft PRD: Exact-variant pickup clarity
 
-October 20, 2026. Exploratory independent portfolio concept based on Academy's observed desktop website; not an official retailer initiative, validated business opportunity, or implementation commitment. Status: proposed product direction; no prototype or new research completed.
+October 20, 2026. Exploratory independent portfolio concept based on Academy's observed desktop website; not an official retailer initiative, validated business opportunity, or implementation commitment. Design revision: October 21, 2026. The [local prototype](../prototype/README.md) now implements revised qualifying-variant matching with explicitly simulated data and new functional checks. The first iteration and its screenshots remain earlier-design records; prior checks were not treated as revised compliance. No new research or customer validation completed.
 
 ## 1. Problem, evidence, and limits
 
@@ -12,62 +12,67 @@ Nike repeats the [pilot's same product/session environment](../research/online-r
 
 ## 2. Goal and non-goals
 
-Goal: make exact-variant/store pickup eligibility understandable during product comparison, before reliance on a card's pickup label. Preserve clear successful matches and existing browsing context.
+Goal: when selected-store pickup filtering is active, show a confirmed qualifying pictured variant and clearly identify its eligibility during comparison. Preserve explicit shopper preferences, successful matches, and browsing context.
 
 Exclude inventory-system repair, fulfillment operations, checkout, reservations, native-app redesign, account requirements, broad visual redesign, and unrelated discovery features. Availability is information, not an inventory reservation or readiness guarantee.
 
-## 3. Proposed MVP and flow
+## 3. Revised direction and flow
 
-Recommend exact-variant pickup information on product cards as the prototype direction, explicitly subject to data feasibility and comprehension validation.
+Prototype review prompted considering qualifying pictured variants and filtering to prevent the card-to-details mismatch, alongside clearer wording. This combines variant selection, exact confirmation and exclusion of confirmed non-matches. It is a design decision, not a new finding or evidence of easier engineering, better comprehension or business benefit.
 
 | Approach | Tradeoff |
 | --- | --- |
-| Exact-variant card information — proposed | Places the answer at comparison time; requires reliable variant/store data and careful state handling. |
-| Clarify product-family wording | Simpler and less data-dependent; can explain that availability varies without resolving the pictured variant. |
-| Require details or quick view | Gives selection context but adds a step before eligibility is known. |
+| Qualifying pictured variant + exact confirmation — proposed | Addresses selection and messaging together; requires reliable variant coverage and uncertain-result handling. |
+| Clarify product-family pickup wording | Explains variation but leaves the shopper to establish exact eligibility. It remains an alternative if wording suffices or data is inadequate. |
+| Require details or quick view | Provides selection context, but eligibility remains unresolved until that extra step. |
 
-The recommendation tests whether earlier specificity helps; it is not research-validated. If data is inadequate or simpler wording suffices, reconsider it.
+With selected-store pickup active, evaluate size, width, maximum price, store and any explicit color preference together. Track pictured color separately from explicit preference. “Any color” is intentional, not incomplete: initially picture the first confirmed qualifying color in fixed catalogue order, showing it in image and text. No personalization or optimization.
 
-Start from existing chosen store, size, width, and pictured/selected color. Show those values beside each card's pickup status; never silently substitute another variant. Missing values prompt selection through existing controls. Completed selections trigger a lookup; current text becomes “Checking pickup” before a result appears. Distinguish chosen-store availability from named nearby alternatives. Nearby results never silently change the chosen store or override nearby-store exclusions; offer an explicit optional check. Opening details and returning preserves filters, selections, sort, and browsing position. Matching products need no extra confirmation step.
+An explicit color choice is a requirement, never replaced to manufacture a match. Details preserve the card variant; later changes invalidate its eligibility and re-evaluate matching. Unavailable selections belong in details or labeled selection exceptions, not confirmed matches. Nearby alternatives require explicit action without changing the chosen store or overriding exclusions.
 
 ## 4. Requirements and acceptance criteria
 
-These are proposed observable prototype checks, not claims about current retailer capabilities.
+R1–R10 are revised below; prior prototype checks apply to their earlier definitions. These describe intended behavior, not retailer capabilities.
 
 | ID | Expected behavior | Observable acceptance criterion |
 | --- | --- | --- |
-| R1 | Identify exact context | Every resolved status names pictured/selected color, size, width, and chosen store; image and context agree. |
-| R2 | Confirm chosen-store availability | An available fixture says “Pickup available at [store]” for R1's tuple; no reservation or unsupported readiness promise appears. |
-| R3 | Separate nearby availability | When chosen store is unavailable and an explicitly checked nearby store is available, display both states and names; never label nearby pickup as chosen-store availability. |
-| R4 | State no pickup within known scope | When all checked locations return unavailable, identify that scope; do not imply all stores were checked. Unknown locations remain unknown. |
-| R5 | Handle incomplete selection | Missing size, width, color mapping, or store prompts the required choice; no confirmed available/unavailable claim appears. A default must be explicit. |
-| R6 | Invalidate on changes | Changing color, size, width, or store immediately removes the previous tuple's current eligibility. During lookup show checking; delayed responses for older tuples cannot replace the new result. |
-| R7 | Handle uncertain data | Loading says checking; lookup failure offers retry; stale/missing data says eligibility cannot be confirmed. None is presented as available or out of stock. |
-| R8 | Separate delivery modes | Shipping ZIP/eligibility cannot determine pickup status. Changing shipping alone does not relabel the chosen pickup store. |
-| R9 | Communicate accessibly | All states have text meaning independent of color. Controls work by keyboard; meaningful asynchronous changes are announced without moving focus. Announced context matches the visible tuple. |
-| R10 | Preserve browsing | After details → Back, retain filters, sort, variant/store choices, nearby exclusions, and the prior card's visible browsing position; do not reset to the top. |
+| R1 | Choose and identify a qualifying variant | With no color preference and invented Black/10/D/Dallas eligibility, picture Black if it is first in the fixed eligible-color order. Image/text identify that color, size, width, price and store; each satisfies the filters. |
+| R2 | Respect preference and preserve detail identity | With explicit Grey/Green preference, an eligible Black fixture cannot silently replace it. Details opened from a match preserve its exact color, size, width, price and store. Confirmed matches explicitly name chosen-store pickup; no reservation/readiness promise. |
+| R3 | Keep nearby scope separate | Lewisville availability alone never qualifies a product for Dallas-filtered results. Nearby alternatives require an explicit check, show their location and exact variant, and leave Dallas chosen. |
+| R4 | Exclude confirmed non-matches | When complete, fresh fixture coverage confirms no variant meets all active requirements, exclude the product from matching results. One unavailable color alone cannot establish this. A definitive no-matches message requires all relevant products resolved as non-matches, not unknown. |
+| R5 | Handle incomplete context | Missing store, size, width, or required variant mapping prompts completion without stock claims. No color preference permits R1 selection; an explicit preference must be honored. Missing mapping/data cannot be treated as absence of qualifying variants. |
+| R6 | Re-evaluate changes safely | Color preference, size, width, price-limit or store changes immediately invalidate prior matching/status. Show checking; discard obsolete responses. Re-evaluate all active constraints before restoring a match; never silently override explicit selections. |
+| R7 | Distinguish unknown from non-match | Loading, failed, stale or unknown data cannot produce confirmed availability or out-of-stock claims. Failure offers retry. If no match is confirmed because information is uncertain, say results could not be fully confirmed; do not say no matching products exist. |
+| R8 | Separate delivery modes | Shipping ZIP/eligibility never determines selected-store pickup or changes its chosen location. |
+| R9 | Communicate accessibly | Match, non-match and uncertain states use text, not color alone. Controls are keyboard-operable; meaningful asynchronous changes and partial-results notices are announced without unexpected focus changes. |
+| R10 | Preserve browsing | Details → Back retains filters, explicit preferences, displayed exact variant, sort, chosen store, nearby exclusions and browsing position. Rechecking does not silently substitute a shopper-selected color. |
 
-R5–R7 take precedence over resolved outcomes R2–R4. A selected-store unavailable result may coexist with unknown nearby status; never infer nearby unavailability from a failed lookup.
+Matching results contain only confirmed qualifying variants. Uncertain products belong outside that list with a clearly labeled incomplete-results notice and appropriate completion/retry actions. If one variant qualifies, unknown alternatives do not invalidate that confirmed match. If none qualifies and any potentially qualifying variant remains unresolved, the product is uncertain, not a confirmed non-match.
+
+Unavailable-variant messages remain useful in details, after explicit selection changes, and in separately labeled alternatives or selection exceptions. They must identify their variant/store scope rather than declare the entire product out of stock.
 
 ## 5. Data assumptions and prototype boundaries
 
-The concept needs product/variant identity, image-to-color mapping, size/width options, chosen store identity, per-location eligibility, response context, observation time, and freshness status. Exact-variant/store access, reliability, and a defensible freshness rule are unresolved production dependencies. No API contracts, engineering estimates, capacity, or rollout dates are assumed.
+Required information includes variant identity, image/color mapping, per-variant price, size/width options, store eligibility, coverage completeness, response context and freshness. Production access, reliability and freshness rules remain unresolved; no APIs, estimates, staffing or rollout commitments are assumed.
 
-A future deterministic prototype would use explicitly mocked fixtures. Label historically inspired Nike/adidas/Reebok states as historical examples, not current stock. Separately label invented incomplete, failure, stale, and changed-selection scenarios as test cases, not findings. Fixed responses and controlled response ordering would exercise R1–R10, including delayed obsolete results. Do not connect to live inventory or imply that simulated eligibility can fulfill an order.
+Use deterministic mocked data for the next revision. Historical Nike Grey/Green and adidas/Reebok states do not establish another qualifying Nike color at Dallas. Alternate-color availability and complete “no variants qualify” cases need explicitly invented fixtures. Missing combinations remain unknown. Label historical examples and invented scenarios separately; neither is current inventory.
+
+The revised prototype uses persistent product-specific Any color/explicit-color controls, fixed catalogue order, and compact exception rows outside confirmed matches. Clearing a preference returns focus to its persistent control. Details retain the pictured variant until an explicit change; returning after removal explains it and restores context with accessible fallback focus. The invented qualifying-color demo is the labeled default; historical mode leaves unknown variant combinations unresolved.
 
 ## 6. Proposed validation and success measures
 
-Primary question: can people correctly identify where a specified pictured color, size, and width can be picked up, distinguishing their chosen store from nearby alternatives and unknown status?
+Primary question: can people identify the exact pictured shoe, size and width that qualifies at their chosen store, while recognizing explicit preferences, nearby-only options and incomplete results?
 
-Prototype acceptance checks would compare displayed and announced states against fixture truth for R1–R10. Passing these checks demonstrates specified behavior, not human comprehension.
+Future fixture checks should cover R1–R10, especially initial color selection, explicit preferences, exclusion, uncertainty and details identity. Passing demonstrates functional behavior only; retained context never authorizes stale eligibility.
 
-Optional future online comprehension evaluation could compare current wording, clarified family wording, and exact-variant cards using equivalent scenarios. Proposed measures: eligibility-identification accuracy (answers matching scenario truth), store-scope errors (nearby availability attributed to the chosen store), and uncertainty recognition (unknown cases identified as unconfirmed). Record explanations and whether details were needed. Define the evaluation procedure before collecting results; no baselines, numeric targets, completed sample, or conversion forecasts exist.
+Optional online evaluation could compare this direction, clearer family wording and details-first flow. Proposed measures: eligibility accuracy (answers matching scenario truth), store-scope errors (nearby mistaken for chosen-store pickup), preference recognition (pictured color versus stated preference), and uncertainty recognition (identifying incomplete results). Include successful cases and selection changes. No baselines, targets, completed samples, customer results or business forecasts exist.
 
-In-person interviews and recruitment are not prerequisites. Without a participant study, online evidence and fixture checks can support design rationale and functional consistency, but comprehension, preference, perceived effort, and customer value remain unvalidated.
+In-person interviews and recruitment are not prerequisites. Without a participant study, comprehension, preference, perceived effort and customer value remain unvalidated. The revised direction is a portfolio hypothesis, not a measured improvement.
 
 ## 7. Open decisions and risks
 
-- Can reliable exact-variant/store information and freshness be established? If not, use explicit uncertainty and revisit the direction.
-- Could clarified family wording provide sufficient understanding with less complexity? This remains a live alternative.
-- How should unset widths, image/color ambiguity, nearby exclusions, and freshness expiry be communicated without overloading cards?
-- Might detailed statuses imply a reservation or promise? Wording must preserve uncertainty and separate availability from fulfillment.
+- Can variant coverage and freshness reliably distinguish no qualifying variant from incomplete information? If not, reconsider the direction or use explicit uncertainty.
+- Could clearer family wording sufficiently explain eligibility without the additional selection behavior?
+- Are the prototype's separate pictured-color text and persistent Any color/explicit-preference controls understandable to shoppers? This remains unvalidated.
+- Do compact selection exceptions and persistent preference controls communicate removal adequately? Functional focus checks do not establish human comprehension.
+- Could eligibility wording still imply reservation or readiness? Keep those separate from availability.
