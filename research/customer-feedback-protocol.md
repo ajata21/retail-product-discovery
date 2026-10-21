@@ -1,6 +1,6 @@
 # Public Customer Feedback Research Protocol
 
-Status: Initial search pass attempted with incomplete screening provenance; Amendment A-01 approved before collecting any formally accepted feedback records. Follow-up source verification not started in this log. Researcher: Andre Taylor. Historical activity is researcher-reported; exact dates and missing execution details are not reconstructed.
+Status: Initial search pass attempted with incomplete screening provenance; Amendment A-01 approved before collecting any formally accepted feedback records. Historical source inspections are recorded in the analysis log; supplied October 19, 2026 independent ChatGPT audit findings correct their status. A-01 improved the proposed method, but full execution and compliance were not demonstrated. This local correction did not reopen sources. Researcher: Andre Taylor. Historical activity is researcher-reported; exact dates and missing execution details are not reconstructed.
 
 Project: Independent undergraduate PM portfolio research on sporting-goods e-commerce discovery and local Buy Online, Pick Up In Store (BOPIS).
 
@@ -8,9 +8,9 @@ Project: Independent undergraduate PM portfolio research on sporting-goods e-com
 
 Investigate whether identifiable customer accounts in public feedback describe experiences related to the four candidate problems in the [competitive UX synthesis](competitive-ux-synthesis.md#4-potential-customer-problems). Seek supporting, positive, contradictory, mixed, and unexpected accounts rather than confirming a preferred feature.
 
-**Completed work:** Researcher walkthroughs of DICK'S Sporting Goods, Academy Sports + Outdoors, and REI are documented in the [competitive UX audit](competitive-ux-audit.md). All 27 screenshots were visually inspected, with qualifications in audit Section 6. The synthesis provisionally recommends investigating C1; customer difficulty and business impact remain unvalidated.
+**Completed work:** Researcher walkthroughs of DICK'S Sporting Goods, Academy Sports + Outdoors, and REI are documented in the [competitive UX audit](competitive-ux-audit.md). All 27 screenshots were visually inspected, with qualifications in audit Section 6. C1 was a provisional investigation preference, not a validated priority; customer prevalence, technical causes, prototype preference, and business impact remain unestablished. Researcher walkthroughs can identify credible interface concerns without interviews.
 
-**Planned work:** A structured review of public feedback, without recruiting participants. This can inform a provisional research direction; it cannot substitute for interviews, controlled usability tests, or verified inventory/fulfillment records. The original scenario—men's running shoes, size 10, maximum displayed price $150, Dallas ZIP 75231—provides context, not a requirement that every feedback item match those exact attributes.
+**Research framing:** This independent undergraduate portfolio can continue using online evidence, website walkthroughs, and eventually a prototype without in-person interviews or recruitment. Online participant testing is an optional future method, not required or authorized here. Public feedback establishes reported experiences, not independently verified retailer conduct. A separately designed bounded online pass is recommended after researcher review; this correction executes none. The original scenario—men's running shoes, size 10, maximum displayed price $150, Dallas ZIP 75231—provides context, not a requirement that every feedback item match those exact attributes.
 
 ## 2. Research Questions
 
@@ -22,7 +22,7 @@ Investigate whether identifiable customer accounts in public feedback describe e
 | C4: Pickup timing | Do shoppers distinguish general pickup estimates from selected-item readiness and order-ready notifications? What communication do they describe as clear or unclear? |
 | Emergent concerns | What other recurring customer-facing concerns appear, including positive experiences or needs outside C1–C4? |
 
-These questions concern reported experiences. Feedback must not be used to infer technical causes, diagnose an inventory system, or treat fewer interactions as inherently better.
+C4 concerns message comprehension, not fulfillment reliability generally. Do not broaden it to absorb every pickup account. Evidence for one component of compound C1 does not validate the whole statement. These questions concern reported experiences. Feedback must not be used to infer technical causes, diagnose an inventory system, or treat fewer interactions as inherently better.
 
 ## 3. Sources and Search Strategy
 
@@ -83,7 +83,7 @@ Retain a relevant reported experience even if its author speculates about the ca
 
 The top-five, sequence, and two-hour rules below describe the original initial design. They were not consistently verifiable in execution. Follow-up uses Amendment A-01 instead; all unchanged eligibility, independence, and integrity rules continue to apply.
 
-Aim initially for **10–15 distinct, relevant customer experiences**, subject to availability. This is a planning range, not a retailer/candidate quota or a minimum to manufacture. Do not include irrelevant or insufficiently contextual evidence to reach the target, and do not discard eligible accounts merely because they fall outside preferred themes or exceed 15. Apply the existing independence and deduplication rules.
+Aim initially for **10–15 distinct, relevant customer experiences**, subject to availability. This and the original time limits are historical planning choices, not sufficiency or saturation thresholds, retailer/candidate quotas, or minimums to manufacture. Do not include irrelevant or insufficiently contextual evidence to reach the target, and do not discard eligible accounts merely because they fall outside preferred themes or exceed 15. Apply the existing independence and deduplication rules.
 
 For each planned search, screen the first five non-advertising results in their displayed order. For each relevant discussion thread, inspect the original post and up to ten initially visible comments in the recorded platform default sort order. Use that rule consistently: do not re-sort to favor a sentiment, expand collapsed replies, or load more comments. For review listings, inspect up to ten initially visible reviews in the recorded default sort order; a direct review permalink is one review, not an invitation to expand the listing. Log fewer visible items and any access restriction. If direct review links are unavailable, record the listing URL plus a stable locator such as review date, rating, and visible text fragment, without copying unnecessary author identifiers.
 
@@ -135,7 +135,7 @@ Use one record per candidate item, including screened exclusions where appropria
 | Important context/limitations | Only explicit size/color/price/store, date, device/channel, outcome, missing context, alternative interpretations, independence uncertainty |
 | Inclusion/exclusion | Include primary, background/context only, duplicate-linked, exclude, or pending clarification; record reason |
 
-No filled customer examples or invented excerpts are included in this protocol.
+No filled customer examples or invented excerpts are included in this protocol. Preserve historical FB/V/SC/EG identifiers when status changes. Distinguish original publication, experience, and update dates; state America/Chicago explicitly for a local publication day. The supplied October 19 independent audit resolves V-04/V-05 publication years without creating new FB records; FB-003 remains a content-supported lead with incomplete strict original-date verification. Its edited status is not a verified original publication timestamp.
 
 ## 8. Qualitative Analysis Approach
 
@@ -168,14 +168,13 @@ After collection, compare C1–C4 and emergent themes using a narrative evidence
 | Counterevidence/alternatives | Do positive accounts or later clarification challenge the interpretation? Could variant, store, channel, or timing context explain differences? |
 | Independent demonstration | Could a small prototype using simulated data test communication or selection support without internal systems or a claim to improve real stock accuracy? |
 
-C1 remains a starting research preference, not a required outcome. Provisionally favor a candidate only when relevant, sufficiently contextual independent accounts make it worth further investigation and a focused demonstration is feasible. Defer or narrow a candidate when evidence is sparse, contradictory, indirect, or mainly operational. An emergent theme may supersede C1; insufficient evidence may justify no feature recommendation. Preserve minority/counterexamples and explain trade-offs rather than declaring a retailer winner.
+C1 remains a historical starting research preference, not a validated priority or required outcome. Provisionally favor a candidate only when relevant, sufficiently contextual independent accounts make it worth further investigation and the evidence supports that investigation; prototype feasibility and assumed potential impact cannot substitute for customer-problem evidence. Defer or narrow a candidate when evidence is sparse, contradictory, indirect, or mainly operational. An emergent theme may supersede C1; insufficient evidence may justify no feature recommendation. Preserve minority/counterexamples and explain trade-offs rather than declaring a retailer winner.
 
 This framework supports qualitative prioritization, not quantitative validation. Do not calculate RICE scores or fabricate reach, impact, confidence, effort, conversion, or task-performance inputs.
 
 ## 11. Next Steps
 
-1. Preserve the initial 18-search design and incomplete execution record. Follow approved Amendment A-01 for prospective source verification, using its 90-minute limit and V-log; record actual settings, source choices, and any further amendments.
-2. Maintain `research/customer-feedback-analysis.md` as the separate execution and source-verification record. Include the dated search log, extraction records, exclusions/duplicates, coverage gaps, and stopping reason. Keep the attempted initial pass separate from follow-up verification and formally accepted evidence.
-3. Analyze reported experiences with the codebook; compare C1–C4 and emergent themes against counterevidence. Keep findings, interpretations, and proposed actions distinct and traceable to feedback IDs.
-4. Review the evidence and prioritize a customer problem provisionally, or document why evidence does not yet justify a choice. Public feedback may guide research direction without proving causality or prevalence.
-5. Draft a conditional PRD only if a problem is sufficiently supported for a focused portfolio experiment. Define non-goals and testable communication/selection requirements, then demonstrate a narrow functional prototype with simulated data. State the remaining limits of evaluating it without recruited users or live retail integrations.
+1. Researcher review the corrected analysis and synthesis, including six accepted FB records, one date-incomplete FB lead, two date-resolved V/SC accounts, and one background account. Eight source-date-qualified accounts span FB and V/SC registers; this is not eight accepted FB records or method-compliance certification.
+2. Preserve the 18-search pass as reported attempts with incomplete provenance and A-01 as an improved proposed method whose full execution/compliance was not demonstrated. Do not reconstruct historical queries, ranks, dates, exclusions, or timing.
+3. Separately design a bounded online evidence pass with neutral questions, provenance and date rules, time budget, stopping conditions, and disconfirming evidence after researcher review. Historical 10–15 and time-limit choices are not sufficiency or saturation thresholds. Do not execute a new pass under this repair request.
+4. Revisit C1–C4 and emergent themes using direct relevance, reported consequences, context, and specific counterevidence before selecting any customer problem, solution, PRD, or prototype. Interviews and recruitment are not prerequisites; online participant testing remains optional future work.
