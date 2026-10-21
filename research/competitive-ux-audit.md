@@ -323,3 +323,11 @@ These are proposed, unvalidated interpretations, not findings about customer fru
 | Resolve screenshot evidence qualifications and conduct comparative researcher review | All 27 images visually inspected; Section 6 qualifications, comparative synthesis, and feature prioritization pending | Not assigned | Not set | Pending |
 | Verify Academy and REI source URLs, capture metadata, and evidence mappings | Confirm evidence mappings, differing distance displays, and selected-variant/store price and pickup messaging without inferring causes | Andre Taylor | Not set | Pending |
 | After researcher review, design a separate bounded online evidence pass; keep scoring optional | No new research authorized in this repair; no problem, PRD, or prototype selected | Not assigned | Not set | Pending |
+
+## 11. Dated follow-up — October 20, 2026
+
+The completed [online pilot's controlled Academy check](online-research-pilot.md#controlled-academy-website-check) is a later, targeted check reported from ChatGPT Work, not a replacement for the October 17–19 historical audit above. Its [four attached screenshots](online-research-pilot.md#attached-academy-screenshot-evidence) were inspected locally during integration; retailer pages were not revisited.
+
+The later store-settings capture shows nearby-store checkboxes unchecked despite the persistent “Dallas & Nearby Stores” chip. Under size 10, $0–$150, and selected-store pickup filtering, the pictured grey/green Nike card said “Pick Up at Dallas.” The product captures show Grey / Green, size 10, width D, and $94.99; Dallas offers email notification while Lewisville offers nearby pickup. The report separately records an accessibility-tree label explicitly identifying Dallas as out of stock; that label is not visible in the screenshots. Automatic size transfer is a reported interaction and a counterexample to size-reselection friction in this journey.
+
+This supports a specific listing-to-product clarity concern; frequency, underlying cause, inventory timing, and customer interpretation remain unresolved. It is not a proven inventory-system bug. The later unchecked-box evidence does not retroactively resolve the missing checkbox state in E-A07/E-A11. Original observations, evidence IDs, and qualifications remain historical evidence; no final problem is selected.

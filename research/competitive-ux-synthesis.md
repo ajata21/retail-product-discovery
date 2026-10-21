@@ -115,3 +115,9 @@ Do not select a customer problem, solution, PRD, or prototype during this repair
 2. Separately design a bounded online pass with explicit questions, source-selection rules, provenance, publication-date checks, time budget, stopping conditions, and disconfirming evidence. Preserve historical missing data rather than reconstructing it.
 3. Compare evidence before selecting any customer problem. Interviews or recruitment are not prerequisites; optional future online participant testing would require its own design.
 4. Defer PRD, solution, and prototype decisions until that review. No new study or publication is authorized by this document correction.
+
+## 9. Pilot update — October 20, 2026
+
+The completed [online research pilot](online-research-pilot.md) records a targeted Academy check and a six-query public-feedback screening pass reported from ChatGPT Work. Its later unchecked nearby-store boxes and pictured-variant listing/product sequence support a specific pickup-clarity concern; automatic size transfer is a counterexample to reselection friction in that journey. The screenshot-visible pickup display is distinguished from the report's explicit Dallas out-of-stock accessibility label. These later observations do not rewrite the historical audit.
+
+Browsing-progress preservation is a competing emerging theme with different reported triggers across retailers, not automatic confirmation of C3. Positive/mixed evidence remains relevant; app reports do not establish desktop website behavior. Pilot dispositions remain separate from formal accepted FB records, including rediscovered V-04/V-05. See the pilot for exact queries, all result positions, review locators, exclusions, duplicates, and limitations. Frequency, cause, customer interpretation, and the final problem remain unresolved. No problem, PRD, or prototype is selected; proposed follow-ups have not been executed by this integration.
