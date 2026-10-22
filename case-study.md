@@ -2,13 +2,15 @@
 
 *Andre Taylor · Independent undergraduate product management project · October 2026*
 
+[Try the interactive prototype.](https://ajata21.github.io/retail-product-discovery/prototype/)
+
 ## Overview
 
 A shopper wants men's running shoes in US size 10, within $150, for pickup near Dallas ZIP 75231. Can they tell whether a pickup label applies to the pictured color, selected size and chosen store together?
 
 A shopper relying on a filtered card might expect the pictured shoe to qualify, then need to backtrack to results when details show otherwise. This is a plausible risk, not observed customer behavior or a documented wasted trip.
 
-I explored that question across three sporting-goods retailers, then narrowed the concept to exact-variant pickup clarity. The result is a [working local prototype](prototype/README.md) that pictures confirmed qualifying variants while respecting explicit color preferences. It uses simulated data, functional checks and internal review. Customer benefit remains unvalidated; this is not an official Academy, DICK'S or REI initiative.
+I explored that question across three sporting-goods retailers, then narrowed the concept to exact-variant pickup clarity. The result is a [working browser prototype](prototype/README.md) that pictures confirmed qualifying variants while respecting explicit color preferences. It uses simulated data, functional checks and internal review. Customer benefit remains unvalidated; this is not an official Academy, DICK'S or REI initiative.
 
 ## My role and AI-assisted workflow
 
@@ -63,7 +65,7 @@ This depends on reliable variant/store data, freshness and coverage. It is not i
 
 ## What I built and reviewed
 
-The three-product local browser demo separates historically inspired outcomes from invented alternate colors, prices and failure scenarios. Existing [fixture checks](prototype/tests/fixtures-check.cjs) contain 47 assertions; [Chrome checks](prototype/tests/browser-check.cjs) cover matching, preferences, uncertain states, store scope, Back and focus. The [verification notes](prototype/README.md) record passing checks at two viewport sizes, not customer usability results.
+The three-product browser demo separates historically inspired outcomes from invented alternate colors, prices and failure scenarios. Existing [fixture checks](prototype/tests/fixtures-check.cjs) contain 47 assertions; [Chrome checks](prototype/tests/browser-check.cjs) cover matching, preferences, uncertain states, store scope, Back and focus. The [verification notes](prototype/README.md) record passing checks at two viewport sizes, not customer usability results.
 
 A reproduced nearby-navigation bug left Black's check indefinitely loading after details had checked Grey/Green. The correction refreshes the opted-in check for the displayed variant and rejects obsolete responses without expanding store scope.
 
