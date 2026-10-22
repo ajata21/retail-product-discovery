@@ -13,11 +13,11 @@ Selected-store pickup is an active requirement, together with size, width, maxim
 - **Any color** is a preference value, separate from the pictured color. It selects the first confirmed qualifying variant in fixed catalogue color order. The pictured color, ordinary per-variant price, size/width and pickup text all refer to that variant. Sorting changes product order, not the color-selection rule.
 - **An explicit color** is never overridden. If it does not qualify, the product leaves confirmed matches. Its preference selector remains visible above results, and a compact exception row explains the exclusion, offers **Clear color preference**, and allows **Inspect selection**. Clearing deliberately returns to Any color and focuses the persistent selector.
 - **Confirmed non-matches** are excluded. One unavailable color is not proof that no variant qualifies. Unknown alternatives do not invalidate an already confirmed qualifying variant.
-- **Uncertainty** stays outside the matching cards in compact rows, with incomplete-results text and relevant completion/retry actions. A definitive no-matches message appears only when all three products are confirmed non-matches. Loading immediately removes previous match claims. Failure, stale, missing, and unknown answers never imply out of stock.
+- **Uncertainty** stays outside the matching cards in compact rows. Missing or invalid preferences prompt completion above; failed lookups offer Retry check. Unknown or stale information points to Inspect selection for reviewing details and optionally checking another store, with no promise that availability will become known. A definitive no-matches message appears only when all three products are confirmed non-matches. Loading immediately removes previous match claims. Failure, stale, missing, and unknown answers never imply out of stock.
 - **Details** preserve the exact variant pictured on the originating card without turning an automatically pictured color into an explicit preference. Selecting a color in details makes that choice explicit; an unavailable color stays pictured with its exact status. A qualifying alternative, when known, requires an explicit action. **Use Any color for results** clears the preference without silently changing the details picture.
 - **Another store** is optional: use **Check another store: Lewisville** (or Dallas when Lewisville is chosen). It does not qualify a product for the chosen-store list, change the chosen store, or silently add scope. Remove the check to exclude it; changing the chosen store clears optional checks. No distances or readiness promises are supplied.
 - **Back** and **Return to results** retain selections, explicit preferences, sort, nearby scope and browsing position. If a details selection removed the originating match, return explains that and focuses its persistent preference control instead of restoring an invalid card. Scroll adjusts if needed to make that fallback focus visible.
-- **Shipping** is explicitly unevaluated and independent of pickup. Changing its area does not trigger a pickup lookup or change the chosen store.
+- **Shipping** is an unevaluated demonstration inside collapsed Demo controls. Changing its area does not trigger a pickup lookup, change pickup eligibility or change the chosen store.
 
 The compact layout keeps the original visual identity. At 1440 × 900 and default browser zoom, exact-variant information and pickup confirmation appear sooner without reducing text to force the whole page onto one screen. The smaller-window layout uses two columns, then one at narrow widths.
 
@@ -66,7 +66,7 @@ Run the dependency-free fixture check with an existing Node runtime:
 node prototype/tests/fixtures-check.cjs
 ```
 
-The optional browser check uses an existing Playwright package and Chrome. Set `PLAYWRIGHT_PATH` to that installed package's absolute directory if needed, then run `node prototype/tests/browser-check.cjs`. Its output goes only to the revised screenshot folder below. No test dependency is needed to open the demo.
+The optional browser check uses an existing Playwright package and Chrome. Set `PLAYWRIGHT_PATH` to that installed package's absolute directory if needed, then run `node prototype/tests/browser-check.cjs`. Captures now go to `screenshots/design-review-2026-10-21/`, preserving the earlier screenshot folders. No test dependency is needed to open the demo.
 
 ### Nearby navigation correction — October 21, 2026
 
@@ -74,7 +74,15 @@ Reproduced in installed headless Chrome: after explicitly checking Lewisville fo
 
 The focused browser regression covers returning with both a completed Grey / Green answer and an in-flight response. Black's Lewisville eligibility correctly resolves as unconfirmed in this invented fixture. The full Chrome acceptance script passed at both existing viewport sizes, including unchanged-selection Back with nearby-answer, filter, preference, scroll and focus preservation; no runtime errors or HTTP(S) requests occurred. All 47 fixture assertions and application/test syntax checks passed. Set `PROTOTYPE_SCREENSHOTS=0` when running the browser script to preserve existing captures, as done for this correction. No research or screenshot evidence was changed.
 
-### Revised screenshots
+### Internal design-review cleanup — October 21, 2026
+
+Moved the shipping-area demonstration into Demo controls and removed its separate shopping-flow section. Guidance now reflects visible actions for unknown, incomplete and failed states. The local SVG renderer uses stronger tonal separation, outlines and accents for the same six named colorways; fixture values, matching logic, prices and eligibility are unchanged. The drawings remain illustrative, not accurate product renders. This is an internal design-review cleanup, not customer validation.
+
+The existing Chrome file:// suite passed at 1440 × 900 and 900 × 760. Added checks verify that shipping is initially hidden inside Demo controls, all three shipping-area choices leave the entire pickup state and lookup generation unchanged (R8), and unknown, missing-selection and failed states offer the actions their guidance names. Inspecting an unknown selection and explicitly checking another store left eligibility unconfirmed, as the fixture requires. Existing matching, explicit-preference, nearby-navigation regression, obsolete-response, Back, scroll and focus checks also passed, with no runtime errors or HTTP(S) requests. All 47 fixture assertions and application/test syntax checks passed.
+
+Nine new captures are stored separately in `screenshots/design-review-2026-10-21/`. Visual review covered [matching results](screenshots/design-review-2026-10-21/01-qualifying-results.png), [unknown guidance](screenshots/design-review-2026-10-21/03-uncertain-results.png), [the smaller window](screenshots/design-review-2026-10-21/05-smaller-window.png), [Grey / Green](screenshots/design-review-2026-10-21/06-nike-grey-green-details.png), [Sand](screenshots/design-review-2026-10-21/07-adidas-sand-details.png), [Navy](screenshots/design-review-2026-10-21/08-reebok-navy-details.png), and [expanded Demo controls](screenshots/design-review-2026-10-21/09-demo-shipping-area.png). Together these show all six existing colorways. Earlier screenshot bytes and research are preserved. These checks do not establish customer comprehension or constitute a full accessibility audit.
+
+### Earlier revision 2 screenshots
 
 1. [Qualifying pictured variants](screenshots/revised-2026-10-21/01-qualifying-results.png).
 2. [Explicit preference retained and exclusion explained](screenshots/revised-2026-10-21/02-explicit-preference.png).

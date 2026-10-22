@@ -9,11 +9,22 @@
   const tuple=(id,color=currentColor(id))=>({...selection(id),color});
   function announce(text){clearTimeout(announceTimer);announceTimer=setTimeout(()=>{if($('announcer').textContent!==text)$('announcer').textContent=text;},80);}
   function illustration(p, color) {
+    // Display-only tonal adjustments; fixture identities, prices and inventory stay intact.
+    const tones={nike:{grey:['#b8c2c6','#b5e322','#263231'],black:['#242a30','#b5bebb','#e0e4df']},adidas:{black:['#242a30','#919ba1','#444e55'],sand:['#c8b99a','#6b593d','#f4ead7']},reebok:{white:['#ffffff','#183654','#ddd3bf'],navy:['#203d59','#c1d5de','#f0eee3']}};
     const c = color || { name: 'Unselected color', upper: '#bfc3b8', trim: '#828c78', sole: '#8c9284' };
+    const [upper,trim,sole]=tones[p.id]?.[c.id]||[c.upper,c.trim,c.sole];
+    const lace=['white','sand'].includes(c.id)?'#53616d':'#eff4f4';
     const accent = p.id === 'adidas'
-      ? `<path d="M139 89l20 39m1-45l20 42m-1-47l22 47" stroke="${c.trim}" stroke-width="9"/>`
-      : `<path d="M111 118q42 17 119-8q-46 33-94 25z" fill="${c.trim}"/>`;
-    return `<svg viewBox="0 0 360 210" role="img" aria-label="Illustration of ${p.name} in ${c.name}"><ellipse cx="184" cy="176" rx="139" ry="10" fill="#d9dccf"/><path d="M44 131l9-60q4-13 13-3l27 31q21 4 38-24l31-12q13 42 55 50l67 18q28 6 32 25l-9 11H61q-23-3-17-36z" fill="${c.upper}" stroke="#34483b" stroke-width="2"/><path d="M50 90l21 35m18-24l14 35M231 123l11 25m11-20l11 21" stroke="${c.trim}" stroke-width="3" opacity=".65"/>${accent}<path d="M117 91l45 6m-39-16l30 5m-21-17l16 6" stroke="#eef0e6" stroke-width="5" stroke-linecap="round"/><path d="M42 151q130 18 276 2v15q-113 18-267 0z" fill="${c.sole}" stroke="#34483b" stroke-width="2"/><path d="M66 163h225" stroke="#eef0e6" opacity=".55" stroke-width="3"/><path d="M52 72l14 20" stroke="${c.trim}" stroke-width="5"/></svg>`;
+      ? `<path d="M139 89l20 39m1-45l20 42m-1-47l22 47" stroke="#18242d" stroke-width="12"/><path d="M139 89l20 39m1-45l20 42m-1-47l22 47" stroke="${trim}" stroke-width="9"/>`
+      : `<path d="M111 118q42 17 119-8q-46 33-94 25z" fill="${trim}" stroke="#26343e" stroke-width="1.5" stroke-linejoin="round"/>`;
+    return `<svg viewBox="0 0 360 210" role="img" aria-label="Illustration of ${p.name} in ${c.name}">
+      <ellipse cx="184" cy="176" rx="139" ry="10" fill="#cbd1c9"/>
+      <path d="M44 131l9-60q4-13 13-3l27 31q21 4 38-24l31-12q13 42 55 50l67 18q28 6 32 25l-9 11H61q-23-3-17-36z" fill="${upper}" stroke="#26343e" stroke-width="2.5"/>
+      <path d="M50 90l21 35m18-24l14 35M231 123l11 25m11-20l11 21" stroke="${trim}" stroke-width="3"/>${accent}
+      <path d="M117 91l45 6m-39-16l30 5m-21-17l16 6" stroke="${lace}" stroke-width="5" stroke-linecap="round"/>
+      <path d="M42 151q130 18 276 2v15q-113 18-267 0z" fill="${sole}" stroke="#26343e" stroke-width="2.5"/>
+      <path d="M66 163h225" stroke="${trim}" stroke-width="2"/><path d="M52 72l14 20" stroke="${trim}" stroke-width="5"/>
+    </svg>`;
   }
 
   function cardHTML(p,detail=false){
@@ -43,8 +54,8 @@
   function reasonText(id,r){
     if(r.kind==='match')return 'Now a confirmed pickup match; shown above.';
     if(r.kind==='loading')return 'Checking requirements; previous match status no longer applies.';
-    if(r.kind==='incomplete')return 'Choose store, size and width, and a valid maximum price to confirm results.';
-    if(r.kind==='uncertain')return {failed:'Lookup failed. Results could not be fully confirmed. Retry this check.',stale:'Availability information is stale. Results could not be fully confirmed.',unknown:'No qualifying variant confirmed; potentially qualifying colors have unknown availability.'}[r.reason]||'Results could not be fully confirmed.';
+    if(r.kind==='incomplete')return 'Complete the missing or invalid pickup preferences above: store, size, width and maximum price.';
+    if(r.kind==='uncertain')return r.reason==='failed'?'Lookup failed. Pickup cannot be confirmed. Use Retry check.':`${r.reason==='stale'?'Availability information is stale.':'Potentially qualifying colors have unknown availability.'} Pickup cannot be confirmed. Use Inspect selection to review product details and check another store. Availability may remain unknown.`;
     if(state.preferences[id])return `Your explicit ${F.variant(id,state.preferences[id],state.scenario)?.name||'color'} preference does not meet all selected requirements. It was not replaced. Clear it to allow another color.`;
     return r.reason==='budget'?'All listed variant prices exceed your maximum; product excluded.':'Complete checks confirm no listed variant meets all selected requirements; product excluded.';
   }
@@ -109,7 +120,11 @@
     const nonmatches=F.products.filter(p=>state.results[p.id]?.kind==='nonmatch').length;
     $('results-notice').hidden=!state.busy&&uncertain===0&&nonmatches===0;
     $('result-count').textContent=`(${matches.length} of 3 products)`;
-    $('results-notice').textContent=state.busy?'Checking all active requirements. Previous matches are not current.':uncertain?`${matches.length} confirmed matching products. Results could not be fully confirmed for ${uncertain} ${uncertain===1?'product':'products'}; see completion or retry options below.`:`${matches.length} confirmed matching products; ${nonmatches} excluded by your requirements.`;
+    const unresolved=Object.values(state.results),guidance=[];
+    if(unresolved.some(r=>r.kind==='incomplete'))guidance.push('Complete missing or invalid pickup preferences above.');
+    if(unresolved.some(r=>r.kind==='uncertain'&&r.reason==='failed'))guidance.push('Use Retry check for failed lookups below.');
+    if(unresolved.some(r=>r.kind==='uncertain'&&r.reason!=='failed'))guidance.push('Pickup cannot be confirmed for unresolved information. Use Inspect selection below to review product details and check another store; availability may remain unknown.');
+    $('results-notice').textContent=state.busy?'Checking all active requirements. Previous matches are not current.':uncertain?`${matches.length} confirmed matching products. Results could not be fully confirmed for ${uncertain} ${uncertain===1?'product':'products'}. ${guidance.join(' ')}`:`${matches.length} confirmed matching products; ${nonmatches} excluded by your requirements.`;
     $('empty').hidden=!(matches.length===0&&nonmatches===F.products.length);
     $('exceptions').hidden=Object.values(rows).every(r=>r.hidden);
     if(state.view){
